@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Fri Mar 19 16:54:34 2021
+# Process ID: 2252
+# Current directory: D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/webtalk/webtalk.log
+# Journal file: D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

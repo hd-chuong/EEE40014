@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Mar 21 12:22:21 2021
+# Process ID: 19604
+# Current directory: D:/Y4/hardsoft/Lab/ip_repo/edit_MyGPIO_v1_0.runs/impl_1
+# Command line: vivado.exe -log MyGPIO_v1_0.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MyGPIO_v1_0.tcl -notrace
+# Log file: D:/Y4/hardsoft/Lab/ip_repo/edit_MyGPIO_v1_0.runs/impl_1/MyGPIO_v1_0.vdi
+# Journal file: D:/Y4/hardsoft/Lab/ip_repo/edit_MyGPIO_v1_0.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MyGPIO_v1_0.tcl -notrace

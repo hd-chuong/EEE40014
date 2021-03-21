@@ -1,0 +1,10 @@
+2021-03-21T12:14:22.919460900255-12:14:22 **** Incremental Build of configuration Debug for project Zybo_IP_creation ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+12:14:23 Build Finished (took 511ms)
+

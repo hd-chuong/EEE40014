@@ -1,0 +1,30 @@
+13:43:10 **** Build of configuration Debug for project GPIO_Example_CPP ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+'Finished building: ../src/main.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: GPIO_Example_CPP.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bsplib/lib -o "GPIO_Example_CPP.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: GPIO_Example_CPP.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_Example_CPP.elf  |tee "GPIO_Example_CPP.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38652	   2584	  23320	  64556	   fc2c	GPIO_Example_CPP.elf
+'Finished building: GPIO_Example_CPP.elf.size'
+' '
+
+13:43:13 Build Finished (took 2s.573ms)
+

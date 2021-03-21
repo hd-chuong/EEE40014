@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/IPCreation/ipshared/f76d/hdl/MyGPIO_v1_0_S00_AXI.vhd" \
+"../../../bd/IPCreation/ipshared/f76d/hdl/MyGPIO_v1_0.vhd" \
+"../../../bd/IPCreation/ip/IPCreation_MyGPIO_0_1/sim/IPCreation_MyGPIO_0_1.vhd" \
+"../../../bd/IPCreation/ip/IPCreation_rst_ps7_0_100M_1/sim/IPCreation_rst_ps7_0_100M_1.vhd" \
+"../../../bd/IPCreation/sim/IPCreation.vhd" \
+
+nosort

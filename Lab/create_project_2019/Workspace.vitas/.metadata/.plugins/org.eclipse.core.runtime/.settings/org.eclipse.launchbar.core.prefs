@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-Default,org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-GDB,org.eclipse.launchbar.core.descriptorType.default\:Debugger_Zybo_IP_creation-Default
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-Default/activeLaunchMode=embdebug
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-GDB/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_GPIO_Example_C-GDB/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_Zybo_IP_creation-Default/activeLaunchMode=embdebug

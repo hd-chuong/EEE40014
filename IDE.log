@@ -1,0 +1,7 @@
+23:38:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\temp_xsdb_launch_script.tcl
+23:38:42 INFO  : XSCT server has started successfully.
+23:38:47 INFO  : Registering command handlers for Vitis TCF services
+23:38:49 INFO  : Successfully done setting XSCT server connection channel  
+23:38:49 INFO  : plnx-install-location is set to ''
+23:38:49 INFO  : Successfully done query RDI_DATADIR 
+23:38:49 INFO  : Successfully done setting workspace for the tool. 
