@@ -1,0 +1,53 @@
+/**
+ *  Test program for flexible GPIO
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <xparameters.h>
+#include <xscugic.h>
+#include <xil_exception.h>
+#include <sleep.h>
+#include "Gpio.h"
+#include "ScuGic.h"
+
+using namespace Hardware;
+
+struct MyIp {
+   uint32_t pdor;   // Port data output register
+   uint32_t pdir; 	// For expansion
+   uint32_t pddr;   // Port data direction register
+   uint32_t psor; 	// For expansion
+   uint32_t pcor; 	// For expansion
+   uint32_t ptor; 	// For expansion
+   uint32_t ack;
+};
+
+void handler(void *data) {
+   printf("Irq\n");
+   // Clear flag in your IP
+}
+
+ScuGic *scuGic;
+
+void testGpioInterrupts() {
+   scuGic = new ScuGic(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+
+   scuGic->connectHandler(XPAR_FABRIC_GPIO_0_IRQ_INTR, handler, nullptr, Priority_Normal);
+
+   // Code to configure interrupts in your IP
+
+   Xil_ExceptionEnable();
+
+   // Wait for events
+   for(;;) {
+   }
+}
+
+int main() {
+   printf("Starting\n");
+
+   testGpioInterrupts();
+
+   return 0;
+}

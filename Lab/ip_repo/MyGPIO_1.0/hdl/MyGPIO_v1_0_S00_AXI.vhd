@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity MyGPIO_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
-        C_GPIO_WIDTH: integer := 4;
+        C_GPIO_WIDTH: integer := 12;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 

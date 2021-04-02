@@ -3,7 +3,6 @@
 	<name>GPIO_Example_CPP</name>
 	<comment>Created by Vitis v2019.2</comment>
 	<projects>
-		<project>design1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

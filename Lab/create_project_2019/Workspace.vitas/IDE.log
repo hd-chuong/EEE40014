@@ -522,3 +522,2767 @@ con
 
 16:29:18 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_zybo_ip_creation-default.tcl'
 16:54:32 INFO  : Disconnected from the channel tcfchan#2.
+12:12:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+12:12:39 INFO  : XSCT server has started successfully.
+12:12:39 INFO  : plnx-install-location is set to ''
+12:12:39 INFO  : Successfully done setting XSCT server connection channel  
+12:12:39 INFO  : Successfully done setting workspace for the tool. 
+12:12:41 INFO  : Registering command handlers for Vitis TCF services
+12:12:53 INFO  : Successfully done query RDI_DATADIR 
+12:14:00 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+12:14:22 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+12:16:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:16:40 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+12:16:40 INFO  : 'jtag frequency' command is executed.
+12:16:40 INFO  : Context for 'APU' is selected.
+12:16:40 INFO  : System reset is completed.
+12:16:43 INFO  : 'after 3000' command is executed.
+12:16:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+12:16:45 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit"
+12:16:46 INFO  : Context for 'APU' is selected.
+12:16:46 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+12:16:46 INFO  : 'configparams force-mem-access 1' command is executed.
+12:16:46 INFO  : Context for 'APU' is selected.
+12:16:46 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/psinit/ps7_init.tcl' is done.
+12:16:47 INFO  : 'ps7_init' command is executed.
+12:16:47 INFO  : 'ps7_post_config' command is executed.
+12:16:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:48 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/Debug/Zybo_IP_creation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:16:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:16:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/Debug/Zybo_IP_creation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:16:48 INFO  : Memory regions updated for context APU
+12:16:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:16:48 INFO  : 'con' command is executed.
+12:16:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:16:48 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_zybo_ip_creation-default.tcl'
+12:46:16 INFO  : Disconnected from the channel tcfchan#1.
+13:01:15 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+13:01:37 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+13:01:45 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+13:01:49 INFO  : The hardware specfication used by project 'Zybo_IP_creation' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:01:49 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\bitstream\IPCreation_wrapper.bit' stored in project is removed.
+13:01:49 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\bitstream' in project 'Zybo_IP_creation'.
+13:01:49 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:01:57 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit' in project 'Zybo_IP_creation'.
+13:02:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:06 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:02:06 INFO  : 'jtag frequency' command is executed.
+13:02:07 INFO  : Context for 'APU' is selected.
+13:02:07 INFO  : System reset is completed.
+13:02:10 INFO  : 'after 3000' command is executed.
+13:02:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:02:11 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:11 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:02:11 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:23 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:02:23 INFO  : 'jtag frequency' command is executed.
+13:02:23 INFO  : Context for 'APU' is selected.
+13:02:23 INFO  : System reset is completed.
+13:02:26 INFO  : 'after 3000' command is executed.
+13:02:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:02:26 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:26 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:02:26 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:02:48 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+13:02:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:02:59 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:02:59 INFO  : 'jtag frequency' command is executed.
+13:02:59 INFO  : Context for 'APU' is selected.
+13:02:59 INFO  : System reset is completed.
+13:03:02 INFO  : 'after 3000' command is executed.
+13:03:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:03:03 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:03:03 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:03:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:03:03 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:16:26 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+13:16:44 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+13:16:52 INFO  : The hardware specfication used by project 'Zybo_IP_creation' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:16:52 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\bitstream' in project 'Zybo_IP_creation'.
+13:16:52 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:16:59 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit' in project 'Zybo_IP_creation'.
+13:16:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:17:00 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:17:00 INFO  : 'jtag frequency' command is executed.
+13:17:00 INFO  : Context for 'APU' is selected.
+13:17:00 INFO  : System reset is completed.
+13:17:03 INFO  : 'after 3000' command is executed.
+13:17:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:17:03 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:17:03 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:17:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:17:03 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:17:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+13:17:48 INFO  : XSCT server has started successfully.
+13:17:48 INFO  : Successfully done setting XSCT server connection channel  
+13:17:48 INFO  : plnx-install-location is set to ''
+13:17:48 INFO  : Successfully done setting workspace for the tool. 
+13:17:50 INFO  : Registering command handlers for Vitis TCF services
+13:17:53 INFO  : Successfully done query RDI_DATADIR 
+13:18:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:03 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:18:03 INFO  : 'jtag frequency' command is executed.
+13:18:03 INFO  : Context for 'APU' is selected.
+13:18:04 INFO  : System reset is completed.
+13:18:07 INFO  : 'after 3000' command is executed.
+13:18:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:18:07 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:18:07 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:18:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:18:07 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:18:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:18:29 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:18:29 INFO  : 'jtag frequency' command is executed.
+13:18:29 INFO  : Context for 'APU' is selected.
+13:18:29 INFO  : System reset is completed.
+13:18:32 INFO  : 'after 3000' command is executed.
+13:18:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:18:33 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:18:33 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:18:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:18:33 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:19:05 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+13:19:36 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+13:19:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:19:53 INFO  : 'fpga -state' command is executed.
+13:19:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:19:55 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:19:55 INFO  : 'jtag frequency' command is executed.
+13:19:55 INFO  : Context for 'APU' is selected.
+13:19:55 INFO  : System reset is completed.
+13:19:58 INFO  : 'after 3000' command is executed.
+13:19:59 INFO  : Context for 'APU' is selected.
+13:19:59 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+13:19:59 INFO  : 'configparams force-mem-access 1' command is executed.
+13:19:59 INFO  : Context for 'APU' is selected.
+13:19:59 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/psinit/ps7_init.tcl' is done.
+13:19:59 INFO  : 'ps7_init' command is executed.
+13:19:59 INFO  : 'ps7_post_config' command is executed.
+13:19:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:59 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/Debug/Zybo_IP_creation.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:19:59 INFO  : 'configparams force-mem-access 0' command is executed.
+13:19:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/Debug/Zybo_IP_creation.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:19:59 INFO  : Memory regions updated for context APU
+13:19:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:19:59 INFO  : 'con' command is executed.
+13:19:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:19:59 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\systemdebugger_zybo_ip_creation_system_standalone.tcl'
+13:20:25 INFO  : Disconnected from the channel tcfchan#1.
+13:20:38 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+13:20:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:20:56 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:20:56 INFO  : 'jtag frequency' command is executed.
+13:20:57 INFO  : Context for 'APU' is selected.
+13:20:57 INFO  : System reset is completed.
+13:21:00 INFO  : 'after 3000' command is executed.
+13:21:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:21:01 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:21:01 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:21:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:21:01 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:21:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:21:08 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:21:08 INFO  : 'jtag frequency' command is executed.
+13:21:08 INFO  : Context for 'APU' is selected.
+13:21:09 INFO  : System reset is completed.
+13:21:12 INFO  : 'after 3000' command is executed.
+13:21:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:21:12 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:21:12 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+13:21:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+13:21:12 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:19:22 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+14:19:31 INFO  : Checking for BSP changes to sync application flags for project 'Zybo_IP_creation'...
+14:19:38 INFO  : The hardware specfication used by project 'Zybo_IP_creation' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:19:38 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\bitstream' in project 'Zybo_IP_creation'.
+14:19:38 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:19:46 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Zybo_IP_creation\_ide\psinit' in project 'Zybo_IP_creation'.
+14:19:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:19:47 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:19:47 INFO  : 'jtag frequency' command is executed.
+14:19:47 INFO  : Context for 'APU' is selected.
+14:19:47 INFO  : System reset is completed.
+14:19:50 INFO  : 'after 3000' command is executed.
+14:19:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:19:50 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:19:50 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:19:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:19:50 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:21:38 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+14:21:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:21:47 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:21:47 INFO  : 'jtag frequency' command is executed.
+14:21:47 INFO  : Context for 'APU' is selected.
+14:21:47 INFO  : System reset is completed.
+14:21:50 INFO  : 'after 3000' command is executed.
+14:21:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:21:50 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:21:50 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:21:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+14:21:50 ERROR : couldn't open "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/_ide/bitstream/IPCreation_wrapper.bit": no such file or directory
+14:22:24 ERROR : Failed to read platform from project 'Zybo_IP_creation'.
+Reason: Failed to execute command 'platform read {D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/platform.spr}'. Click on details for more information.
+14:22:33 ERROR : Failed to read platform from project 'Zybo_IP_creation'.
+Reason: Failed to execute command 'platform read {D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Zybo_IP_creation/platform.spr}'. Click on details for more information.
+14:22:43 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper' from custom platform repositories.
+14:24:16 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper' from custom platform repositories.
+14:24:16 INFO  : Platform 'IPCreation_wrapper' is added to custom repositories.
+14:25:38 INFO  : Checking for BSP changes to sync application flags for project 'Lab1'...
+14:25:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:25:46 INFO  : 'fpga -state' command is executed.
+14:25:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:25:51 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:25:51 INFO  : 'jtag frequency' command is executed.
+14:25:51 INFO  : Context for 'APU' is selected.
+14:25:51 INFO  : System reset is completed.
+14:25:54 INFO  : 'after 3000' command is executed.
+14:25:54 INFO  : Context for 'APU' is selected.
+14:25:54 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:25:54 INFO  : 'configparams force-mem-access 1' command is executed.
+14:25:54 INFO  : Context for 'APU' is selected.
+14:25:54 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:25:54 INFO  : 'ps7_init' command is executed.
+14:25:55 INFO  : 'ps7_post_config' command is executed.
+14:25:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:55 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:25:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:25:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:25:55 INFO  : Memory regions updated for context APU
+14:25:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:55 INFO  : 'con' command is executed.
+14:25:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:25:55 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:26:30 INFO  : Disconnected from the channel tcfchan#4.
+14:26:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:26:40 INFO  : 'fpga -state' command is executed.
+14:26:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:42 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:26:42 INFO  : 'jtag frequency' command is executed.
+14:26:42 INFO  : Context for 'APU' is selected.
+14:26:42 INFO  : System reset is completed.
+14:26:45 INFO  : 'after 3000' command is executed.
+14:26:45 INFO  : Context for 'APU' is selected.
+14:26:46 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:26:46 INFO  : 'configparams force-mem-access 1' command is executed.
+14:26:46 INFO  : Context for 'APU' is selected.
+14:26:46 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:26:46 INFO  : 'ps7_init' command is executed.
+14:26:46 INFO  : 'ps7_post_config' command is executed.
+14:26:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:26:46 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:26:46 INFO  : 'configparams force-mem-access 0' command is executed.
+14:26:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:26:46 INFO  : Memory regions updated for context APU
+14:26:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:26:46 INFO  : 'con' command is executed.
+14:26:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:26:46 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:27:11 INFO  : Disconnected from the channel tcfchan#7.
+14:30:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:30:51 INFO  : 'fpga -state' command is executed.
+14:30:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:56 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:30:57 INFO  : 'jtag frequency' command is executed.
+14:30:57 INFO  : Context for 'APU' is selected.
+14:30:58 INFO  : System reset is completed.
+14:31:01 INFO  : 'after 3000' command is executed.
+14:31:01 INFO  : Context for 'APU' is selected.
+14:31:01 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:31:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:31:01 INFO  : Context for 'APU' is selected.
+14:31:01 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:31:01 INFO  : 'ps7_init' command is executed.
+14:31:01 INFO  : 'ps7_post_config' command is executed.
+14:31:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:01 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:31:01 INFO  : 'configparams force-mem-access 0' command is executed.
+14:31:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:31:01 INFO  : Memory regions updated for context APU
+14:31:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:01 INFO  : 'con' command is executed.
+14:31:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:31:01 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:31:15 INFO  : Disconnected from the channel tcfchan#8.
+14:31:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:31:38 INFO  : 'fpga -state' command is executed.
+14:31:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:31:40 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:31:41 INFO  : 'jtag frequency' command is executed.
+14:31:41 INFO  : Context for 'APU' is selected.
+14:31:41 INFO  : System reset is completed.
+14:31:44 INFO  : 'after 3000' command is executed.
+14:31:44 INFO  : Context for 'APU' is selected.
+14:31:44 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:31:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:31:45 INFO  : Context for 'APU' is selected.
+14:31:45 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:31:45 INFO  : 'ps7_init' command is executed.
+14:31:45 INFO  : 'ps7_post_config' command is executed.
+14:31:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:46 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:31:46 INFO  : 'configparams force-mem-access 0' command is executed.
+14:31:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:31:46 INFO  : Memory regions updated for context APU
+14:31:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:31:47 INFO  : 'con' command is executed.
+14:31:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:31:47 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:32:13 INFO  : Disconnected from the channel tcfchan#9.
+14:39:46 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+14:39:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:39:59 INFO  : 'fpga -state' command is executed.
+14:40:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:01 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:40:02 INFO  : 'jtag frequency' command is executed.
+14:40:02 INFO  : Context for 'APU' is selected.
+14:40:02 INFO  : System reset is completed.
+14:40:05 INFO  : 'after 3000' command is executed.
+14:40:05 INFO  : Context for 'APU' is selected.
+14:40:05 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:40:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:40:05 INFO  : Context for 'APU' is selected.
+14:40:05 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:40:06 INFO  : 'ps7_init' command is executed.
+14:40:06 INFO  : 'ps7_post_config' command is executed.
+14:40:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:07 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:07 INFO  : 'configparams force-mem-access 0' command is executed.
+14:40:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:40:07 INFO  : Memory regions updated for context APU
+14:40:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:08 INFO  : 'con' command is executed.
+14:40:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:40:08 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:40:50 INFO  : Disconnected from the channel tcfchan#10.
+14:41:24 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+14:41:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:41:36 INFO  : 'fpga -state' command is executed.
+14:41:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:41:40 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:41:40 INFO  : 'jtag frequency' command is executed.
+14:41:41 INFO  : Context for 'APU' is selected.
+14:41:41 INFO  : System reset is completed.
+14:41:44 INFO  : 'after 3000' command is executed.
+14:41:44 INFO  : Context for 'APU' is selected.
+14:41:44 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:41:44 INFO  : 'configparams force-mem-access 1' command is executed.
+14:41:44 INFO  : Context for 'APU' is selected.
+14:41:44 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:41:44 INFO  : 'ps7_init' command is executed.
+14:41:44 INFO  : 'ps7_post_config' command is executed.
+14:41:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:45 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:41:45 INFO  : 'configparams force-mem-access 0' command is executed.
+14:41:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:41:45 INFO  : Memory regions updated for context APU
+14:41:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:41:45 INFO  : 'con' command is executed.
+14:41:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:41:45 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:42:43 INFO  : Disconnected from the channel tcfchan#11.
+14:43:26 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_C'...
+14:43:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:43:55 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:43:55 INFO  : 'jtag frequency' command is executed.
+14:43:55 INFO  : Context for 'APU' is selected.
+14:43:55 INFO  : System reset is completed.
+14:43:58 INFO  : 'after 3000' command is executed.
+14:43:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:44:00 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/bitstream/design1.bit"
+14:44:01 INFO  : Context for 'APU' is selected.
+14:44:01 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/hw/design1.xsa'.
+14:44:01 INFO  : 'configparams force-mem-access 1' command is executed.
+14:44:01 INFO  : Context for 'APU' is selected.
+14:44:02 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/psinit/ps7_init.tcl' is done.
+14:44:02 INFO  : 'ps7_init' command is executed.
+14:44:02 INFO  : 'ps7_post_config' command is executed.
+14:44:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:03 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/Debug/GPIO_Example_C.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:44:03 INFO  : 'configparams force-mem-access 0' command is executed.
+14:44:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/bitstream/design1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/hw/design1.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/Debug/GPIO_Example_C.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:44:04 INFO  : Memory regions updated for context APU
+14:44:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:44:04 INFO  : 'con' command is executed.
+14:44:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:44:04 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_gpio_example_c-default.tcl'
+14:44:52 INFO  : Disconnected from the channel tcfchan#13.
+14:45:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:45:02 INFO  : 'fpga -state' command is executed.
+14:45:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:03 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:45:03 INFO  : 'jtag frequency' command is executed.
+14:45:03 INFO  : Context for 'APU' is selected.
+14:45:03 INFO  : System reset is completed.
+14:45:06 INFO  : 'after 3000' command is executed.
+14:45:06 INFO  : Context for 'APU' is selected.
+14:45:06 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:45:06 INFO  : 'configparams force-mem-access 1' command is executed.
+14:45:06 INFO  : Context for 'APU' is selected.
+14:45:06 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:45:06 INFO  : 'ps7_init' command is executed.
+14:45:06 INFO  : 'ps7_post_config' command is executed.
+14:45:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:06 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:45:06 INFO  : 'configparams force-mem-access 0' command is executed.
+14:45:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:45:06 INFO  : Memory regions updated for context APU
+14:45:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:45:06 INFO  : 'con' command is executed.
+14:45:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:45:06 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:45:18 INFO  : Disconnected from the channel tcfchan#14.
+14:46:26 INFO  : Checking for BSP changes to sync application flags for project 'Lab1'...
+13:32:46 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+13:32:53 INFO  : XSCT server has started successfully.
+13:32:53 INFO  : plnx-install-location is set to ''
+13:32:53 INFO  : Successfully done setting XSCT server connection channel  
+13:32:53 INFO  : Successfully done setting workspace for the tool. 
+13:32:57 INFO  : Registering command handlers for Vitis TCF services
+13:33:07 INFO  : Successfully done query RDI_DATADIR 
+13:33:58 INFO  : The hardware specfication used by project 'Lab1' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:33:58 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1\_ide\bitstream' in project 'Lab1'.
+13:33:58 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:34:07 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1\_ide\psinit' in project 'Lab1'.
+13:34:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+13:34:13 INFO  : 'fpga -state' command is executed.
+13:34:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:34:18 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+13:34:19 INFO  : 'jtag frequency' command is executed.
+13:34:20 INFO  : Context for 'APU' is selected.
+13:34:20 INFO  : System reset is completed.
+13:34:23 INFO  : 'after 3000' command is executed.
+13:34:23 INFO  : Context for 'APU' is selected.
+13:34:23 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+13:34:23 INFO  : 'configparams force-mem-access 1' command is executed.
+13:34:23 INFO  : Context for 'APU' is selected.
+13:34:23 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+13:34:25 INFO  : 'ps7_init' command is executed.
+13:34:25 INFO  : 'ps7_post_config' command is executed.
+13:34:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:34:25 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:34:26 INFO  : 'configparams force-mem-access 0' command is executed.
+13:34:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:34:26 INFO  : Memory regions updated for context APU
+13:34:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:34:27 INFO  : 'con' command is executed.
+13:34:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:34:27 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+13:35:14 INFO  : Disconnected from the channel tcfchan#1.
+14:27:08 INFO  : Hardware specification for platform project 'IPCreation_wrapper' is updated.
+14:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:27:31 INFO  : 'fpga -state' command is executed.
+14:27:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:27:33 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:27:34 INFO  : 'jtag frequency' command is executed.
+14:27:34 INFO  : Context for 'APU' is selected.
+14:27:34 INFO  : System reset is completed.
+14:27:37 INFO  : 'after 3000' command is executed.
+14:27:37 INFO  : Context for 'APU' is selected.
+14:27:41 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa'.
+14:27:41 INFO  : 'configparams force-mem-access 1' command is executed.
+14:27:41 INFO  : Context for 'APU' is selected.
+14:27:41 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl' is done.
+14:27:41 INFO  : 'ps7_init' command is executed.
+14:27:41 INFO  : 'ps7_post_config' command is executed.
+14:27:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:41 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:27:41 INFO  : 'configparams force-mem-access 0' command is executed.
+14:27:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper/hw/IPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1/Debug/Lab1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:27:41 INFO  : Memory regions updated for context APU
+14:27:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:27:41 INFO  : 'con' command is executed.
+14:27:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:27:41 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1-default.tcl'
+14:27:53 INFO  : Disconnected from the channel tcfchan#2.
+14:27:59 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/IPCreation_wrapper/export/IPCreation_wrapper' from custom platform repositories.
+14:28:41 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_C'...
+14:28:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:28:51 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:28:51 INFO  : 'jtag frequency' command is executed.
+14:28:52 INFO  : Context for 'APU' is selected.
+14:28:52 INFO  : System reset is completed.
+14:28:55 INFO  : 'after 3000' command is executed.
+14:28:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:28:57 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/bitstream/design1.bit"
+14:28:58 INFO  : Context for 'APU' is selected.
+14:28:58 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/hw/design1.xsa'.
+14:28:58 INFO  : 'configparams force-mem-access 1' command is executed.
+14:28:59 INFO  : Context for 'APU' is selected.
+14:28:59 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/psinit/ps7_init.tcl' is done.
+14:29:00 INFO  : 'ps7_init' command is executed.
+14:29:00 INFO  : 'ps7_post_config' command is executed.
+14:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:01 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/Debug/GPIO_Example_C.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:29:01 INFO  : 'configparams force-mem-access 0' command is executed.
+14:29:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/bitstream/design1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/hw/design1.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/Debug/GPIO_Example_C.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:29:01 INFO  : Memory regions updated for context APU
+14:29:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:29:01 INFO  : 'con' command is executed.
+14:29:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:29:01 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_gpio_example_c-default.tcl'
+14:29:20 INFO  : Disconnected from the channel tcfchan#4.
+14:34:58 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt2'...
+14:37:13 INFO  : Hardware specification for platform project 'design1' is updated.
+14:39:33 ERROR : An unexpected exception occurred in the module 'reading platform'
+14:39:33 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1' from custom platform repositories.
+14:42:53 ERROR : An unexpected exception occurred in the module 'reading platform'
+14:42:53 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1' from custom platform repositories.
+14:43:58 ERROR : Failed to extract bitstream during creation of 'ZyboIPCreation_wrapper_1'
+14:44:10 INFO  : Removed 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1' from custom platform repositories.
+14:44:10 INFO  : Platform 'ZyboIPCreation_wrapper_1' is added to custom repositories.
+14:47:05 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:48:31 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:48:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:53 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:48:53 INFO  : 'jtag frequency' command is executed.
+14:48:54 INFO  : Context for 'APU' is selected.
+14:48:54 INFO  : System reset is completed.
+14:48:57 INFO  : 'after 3000' command is executed.
+14:48:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:48:59 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:48:59 INFO  : Context for 'APU' is selected.
+14:49:00 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:49:00 INFO  : 'configparams force-mem-access 1' command is executed.
+14:49:00 INFO  : Context for 'APU' is selected.
+14:49:00 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:49:01 INFO  : 'ps7_init' command is executed.
+14:49:01 INFO  : 'ps7_post_config' command is executed.
+14:49:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:02 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:49:02 INFO  : 'configparams force-mem-access 0' command is executed.
+14:49:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:49:02 INFO  : Memory regions updated for context APU
+14:49:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:49:02 INFO  : 'con' command is executed.
+14:49:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:49:02 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:49:40 INFO  : Disconnected from the channel tcfchan#7.
+15:21:45 INFO  : Hardware specification for platform project 'ZyboIPCreation_wrapper_1' is updated.
+15:23:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:34 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:23:34 INFO  : 'jtag frequency' command is executed.
+15:23:34 INFO  : Context for 'APU' is selected.
+15:23:34 INFO  : System reset is completed.
+15:23:37 INFO  : 'after 3000' command is executed.
+15:23:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:23:38 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:23:38 INFO  : Context for 'APU' is selected.
+15:23:38 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:23:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:23:38 INFO  : Context for 'APU' is selected.
+15:23:38 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:23:39 INFO  : 'ps7_init' command is executed.
+15:23:39 INFO  : 'ps7_post_config' command is executed.
+15:23:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:39 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:23:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:23:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:23:39 INFO  : Memory regions updated for context APU
+15:23:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:23:39 INFO  : 'con' command is executed.
+15:23:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:23:39 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:43:44 INFO  : Disconnected from the channel tcfchan#8.
+15:43:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:55 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:43:55 INFO  : 'jtag frequency' command is executed.
+15:43:55 INFO  : Context for 'APU' is selected.
+15:43:55 INFO  : System reset is completed.
+15:43:58 INFO  : 'after 3000' command is executed.
+15:43:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:43:59 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:43:59 INFO  : Context for 'APU' is selected.
+15:43:59 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:43:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:43:59 INFO  : Context for 'APU' is selected.
+15:43:59 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:44:00 INFO  : 'ps7_init' command is executed.
+15:44:00 INFO  : 'ps7_post_config' command is executed.
+15:44:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:00 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:44:00 INFO  : 'configparams force-mem-access 0' command is executed.
+15:44:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:44:00 INFO  : Memory regions updated for context APU
+15:44:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:44:00 INFO  : 'con' command is executed.
+15:44:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:44:00 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:09:27 INFO  : Disconnected from the channel tcfchan#9.
+17:50:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+17:50:31 INFO  : XSCT server has started successfully.
+17:50:31 INFO  : Successfully done setting XSCT server connection channel  
+17:50:31 INFO  : plnx-install-location is set to ''
+17:50:31 INFO  : Successfully done setting workspace for the tool. 
+17:50:32 INFO  : Registering command handlers for Vitis TCF services
+17:50:36 INFO  : Successfully done query RDI_DATADIR 
+17:50:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:51:02 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:51:02 INFO  : 'jtag frequency' command is executed.
+17:51:03 INFO  : Context for 'APU' is selected.
+17:51:03 INFO  : System reset is completed.
+17:51:06 INFO  : 'after 3000' command is executed.
+17:51:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:51:09 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:51:10 INFO  : Context for 'APU' is selected.
+17:51:10 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:51:10 INFO  : 'configparams force-mem-access 1' command is executed.
+17:51:10 INFO  : Context for 'APU' is selected.
+17:51:10 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:51:10 INFO  : 'ps7_init' command is executed.
+17:51:10 INFO  : 'ps7_post_config' command is executed.
+17:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:51:11 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:51:11 INFO  : 'configparams force-mem-access 0' command is executed.
+17:51:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:51:12 INFO  : Memory regions updated for context APU
+17:51:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:51:12 INFO  : 'con' command is executed.
+17:51:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:51:12 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:51:33 INFO  : Disconnected from the channel tcfchan#1.
+17:52:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:09 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:52:09 INFO  : 'jtag frequency' command is executed.
+17:52:10 INFO  : Context for 'APU' is selected.
+17:52:10 INFO  : System reset is completed.
+17:52:13 INFO  : 'after 3000' command is executed.
+17:52:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:52:15 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:52:16 INFO  : Context for 'APU' is selected.
+17:52:18 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:52:18 INFO  : 'configparams force-mem-access 1' command is executed.
+17:52:19 INFO  : Context for 'APU' is selected.
+17:52:19 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:52:19 INFO  : 'ps7_init' command is executed.
+17:52:19 INFO  : 'ps7_post_config' command is executed.
+17:52:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:20 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:52:20 INFO  : 'configparams force-mem-access 0' command is executed.
+17:52:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:52:20 INFO  : Memory regions updated for context APU
+17:52:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:52:21 INFO  : 'con' command is executed.
+17:52:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:52:21 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:52:43 INFO  : Disconnected from the channel tcfchan#2.
+17:53:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:53:15 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:53:15 INFO  : 'jtag frequency' command is executed.
+17:53:16 INFO  : Context for 'APU' is selected.
+17:53:16 INFO  : System reset is completed.
+17:53:19 INFO  : 'after 3000' command is executed.
+17:53:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:53:21 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:53:22 INFO  : Context for 'APU' is selected.
+17:53:23 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:53:23 INFO  : 'configparams force-mem-access 1' command is executed.
+17:53:24 INFO  : Context for 'APU' is selected.
+17:53:24 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:53:24 INFO  : 'ps7_init' command is executed.
+17:53:24 INFO  : 'ps7_post_config' command is executed.
+17:53:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:25 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:53:25 INFO  : 'configparams force-mem-access 0' command is executed.
+17:53:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:53:25 INFO  : Memory regions updated for context APU
+17:53:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:25 INFO  : 'con' command is executed.
+17:53:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:53:25 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:53:35 INFO  : Disconnected from the channel tcfchan#3.
+17:54:00 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+17:54:00 WARN  : Failed to closehw "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa"
+Reason: Cannot close hw design 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+Design is not opened in the current session.
+
+17:54:08 INFO  : The hardware specfication used by project 'Lab1_attempt3' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+17:54:08 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream\ZyboIPCreation_wrapper.bit' stored in project is removed.
+17:54:08 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream' in project 'Lab1_attempt3'.
+17:54:08 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit\ps7_init.tcl' stored in project is removed.
+17:54:14 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit' in project 'Lab1_attempt3'.
+17:54:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:54:18 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:54:18 INFO  : 'jtag frequency' command is executed.
+17:54:19 INFO  : Context for 'APU' is selected.
+17:54:19 INFO  : System reset is completed.
+17:54:22 INFO  : 'after 3000' command is executed.
+17:54:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:54:24 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:54:25 INFO  : Context for 'APU' is selected.
+17:54:25 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:54:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:54:25 INFO  : Context for 'APU' is selected.
+17:54:25 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:54:26 INFO  : 'ps7_init' command is executed.
+17:54:26 INFO  : 'ps7_post_config' command is executed.
+17:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:27 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:54:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:54:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:54:27 INFO  : Memory regions updated for context APU
+17:54:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:27 INFO  : 'con' command is executed.
+17:54:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:54:28 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:54:49 INFO  : Disconnected from the channel tcfchan#5.
+17:54:56 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+17:55:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:06 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:55:06 INFO  : 'jtag frequency' command is executed.
+17:55:07 INFO  : Context for 'APU' is selected.
+17:55:07 INFO  : System reset is completed.
+17:55:10 INFO  : 'after 3000' command is executed.
+17:55:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:55:12 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:55:13 INFO  : Context for 'APU' is selected.
+17:55:13 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:55:13 INFO  : 'configparams force-mem-access 1' command is executed.
+17:55:13 INFO  : Context for 'APU' is selected.
+17:55:13 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:55:14 INFO  : 'ps7_init' command is executed.
+17:55:14 INFO  : 'ps7_post_config' command is executed.
+17:55:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:55:15 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:55:15 INFO  : 'configparams force-mem-access 0' command is executed.
+17:55:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:55:16 INFO  : Memory regions updated for context APU
+17:55:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:55:16 INFO  : 'con' command is executed.
+17:55:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:55:16 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:55:30 INFO  : Disconnected from the channel tcfchan#6.
+17:55:42 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+17:55:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:55:53 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+17:55:53 INFO  : 'jtag frequency' command is executed.
+17:55:53 INFO  : Context for 'APU' is selected.
+17:55:53 INFO  : System reset is completed.
+17:55:56 INFO  : 'after 3000' command is executed.
+17:55:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+17:55:58 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+17:55:59 INFO  : Context for 'APU' is selected.
+17:55:59 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+17:55:59 INFO  : 'configparams force-mem-access 1' command is executed.
+17:56:00 INFO  : Context for 'APU' is selected.
+17:56:00 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+17:56:00 INFO  : 'ps7_init' command is executed.
+17:56:00 INFO  : 'ps7_post_config' command is executed.
+17:56:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:56:01 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:56:02 INFO  : 'configparams force-mem-access 0' command is executed.
+17:56:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:56:02 INFO  : Memory regions updated for context APU
+17:56:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:56:02 INFO  : 'con' command is executed.
+17:56:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:56:02 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+17:58:26 INFO  : Disconnected from the channel tcfchan#7.
+18:02:06 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:02:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:02:26 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:02:26 INFO  : 'jtag frequency' command is executed.
+18:02:27 INFO  : Context for 'APU' is selected.
+18:02:27 INFO  : System reset is completed.
+18:02:30 INFO  : 'after 3000' command is executed.
+18:02:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:02:32 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:02:33 INFO  : Context for 'APU' is selected.
+18:02:33 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:02:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:33 INFO  : Context for 'APU' is selected.
+18:02:33 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:02:34 INFO  : 'ps7_init' command is executed.
+18:02:34 INFO  : 'ps7_post_config' command is executed.
+18:02:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:35 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:02:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:02:35 INFO  : Memory regions updated for context APU
+18:02:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:36 INFO  : 'con' command is executed.
+18:02:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:02:36 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+18:02:59 INFO  : Disconnected from the channel tcfchan#8.
+18:03:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:16 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:03:16 INFO  : 'jtag frequency' command is executed.
+18:03:16 INFO  : Context for 'APU' is selected.
+18:03:16 INFO  : System reset is completed.
+18:03:19 INFO  : 'after 3000' command is executed.
+18:03:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:03:21 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:03:22 INFO  : Context for 'APU' is selected.
+18:03:22 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:03:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:03:22 INFO  : Context for 'APU' is selected.
+18:03:22 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:03:23 INFO  : 'ps7_init' command is executed.
+18:03:23 INFO  : 'ps7_post_config' command is executed.
+18:03:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:24 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:03:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:03:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:03:24 INFO  : Memory regions updated for context APU
+18:03:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:03:24 INFO  : 'con' command is executed.
+18:03:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:03:24 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+18:09:16 INFO  : Disconnected from the channel tcfchan#9.
+18:09:33 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:09:44 INFO  : Launch of emulator has been cancelled. Launch configuration will be terminated.
+18:09:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:09:50 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:09:50 INFO  : 'jtag frequency' command is executed.
+18:09:50 INFO  : Context for 'APU' is selected.
+18:09:50 INFO  : System reset is completed.
+18:09:53 INFO  : 'after 3000' command is executed.
+18:09:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:09:55 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:09:55 INFO  : Context for 'APU' is selected.
+18:09:55 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:09:55 INFO  : 'configparams force-mem-access 1' command is executed.
+18:09:55 INFO  : Context for 'APU' is selected.
+18:09:55 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:09:55 INFO  : 'ps7_init' command is executed.
+18:09:55 INFO  : 'ps7_post_config' command is executed.
+18:09:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:55 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:09:55 INFO  : 'configparams force-mem-access 0' command is executed.
+18:09:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:09:55 INFO  : Memory regions updated for context APU
+18:09:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:55 INFO  : 'con' command is executed.
+18:09:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:09:55 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+18:55:32 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_CPP'...
+18:55:32 ERROR : Failed to get platform details for the project 'GPIO_Example_CPP'. Cannot sync application flags.
+00:21:48 INFO  : Disconnected from the channel tcfchan#10.
+13:58:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+13:58:13 INFO  : XSCT server has started successfully.
+13:58:13 INFO  : Successfully done setting XSCT server connection channel  
+13:58:13 INFO  : plnx-install-location is set to ''
+13:58:13 INFO  : Successfully done setting workspace for the tool. 
+13:58:16 INFO  : Registering command handlers for Vitis TCF services
+13:58:21 INFO  : Successfully done query RDI_DATADIR 
+14:00:27 INFO  : Hardware specification for platform project 'ZyboIPCreation_wrapper_1' is updated.
+14:06:12 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_CPP'...
+14:06:12 ERROR : Failed to get platform details for the project 'GPIO_Example_CPP'. Cannot sync application flags.
+14:09:43 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_CPP'...
+14:09:43 ERROR : Failed to get platform details for the project 'GPIO_Example_CPP'. Cannot sync application flags.
+14:11:32 ERROR : Failed to read platform from project 'Lab1_attempt3'.
+Reason: Failed to execute command 'platform read {D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/platform.spr}'. Click on details for more information.
+14:11:42 ERROR : Failed to read platform from project 'Lab1_attempt3'.
+Reason: Failed to execute command 'platform read {D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/platform.spr}'. Click on details for more information.
+14:12:07 ERROR : Failed to read platform from project 'Lab1_attempt3'.
+Reason: Failed to execute command 'platform read {D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/platform.spr}'. Click on details for more information.
+14:12:20 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:12:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+14:13:00 INFO  : XSCT server has started successfully.
+14:13:00 INFO  : Successfully done setting XSCT server connection channel  
+14:13:00 INFO  : plnx-install-location is set to ''
+14:13:00 INFO  : Successfully done setting workspace for the tool. 
+14:13:02 INFO  : Registering command handlers for Vitis TCF services
+14:13:02 INFO  : Successfully done query RDI_DATADIR 
+14:13:10 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:13:20 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:13:45 INFO  : Hardware specification for platform project 'ZyboIPCreation_wrapper_1' is updated.
+14:13:54 INFO  : The hardware specfication used by project 'Lab1_attempt3' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:13:54 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream\ZyboIPCreation_wrapper.bit' stored in project is removed.
+14:13:54 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream' in project 'Lab1_attempt3'.
+14:13:54 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:14:01 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit' in project 'Lab1_attempt3'.
+14:14:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:06 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:14:06 INFO  : 'jtag frequency' command is executed.
+14:14:06 INFO  : Context for 'APU' is selected.
+14:14:06 INFO  : System reset is completed.
+14:14:09 INFO  : 'after 3000' command is executed.
+14:14:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:14:11 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:14:12 INFO  : Context for 'APU' is selected.
+14:14:12 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:14:12 INFO  : 'configparams force-mem-access 1' command is executed.
+14:14:13 INFO  : Context for 'APU' is selected.
+14:14:13 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:14:14 INFO  : 'ps7_init' command is executed.
+14:14:14 INFO  : 'ps7_post_config' command is executed.
+14:14:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:15 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:14:15 INFO  : 'configparams force-mem-access 0' command is executed.
+14:14:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:14:15 INFO  : Memory regions updated for context APU
+14:14:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:15 INFO  : 'con' command is executed.
+14:14:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:14:15 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:17:11 INFO  : Disconnected from the channel tcfchan#1.
+14:17:34 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:17:34 WARN  : Failed to closehw "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa"
+Reason: Cannot close hw design 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+Design is not opened in the current session.
+
+14:18:22 INFO  : The hardware specfication used by project 'Lab1_attempt3' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+14:18:22 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream\ZyboIPCreation_wrapper.bit' stored in project is removed.
+14:18:22 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream' in project 'Lab1_attempt3'.
+14:18:22 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit\ps7_init.tcl' stored in project is removed.
+14:18:29 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit' in project 'Lab1_attempt3'.
+14:18:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:33 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:18:33 INFO  : 'jtag frequency' command is executed.
+14:18:33 INFO  : Context for 'APU' is selected.
+14:18:33 INFO  : System reset is completed.
+14:18:37 INFO  : 'after 3000' command is executed.
+14:18:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:18:38 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:18:39 INFO  : Context for 'APU' is selected.
+14:18:39 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:18:39 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:39 INFO  : Context for 'APU' is selected.
+14:18:39 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:18:40 INFO  : 'ps7_init' command is executed.
+14:18:40 INFO  : 'ps7_post_config' command is executed.
+14:18:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:41 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:41 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:41 INFO  : Memory regions updated for context APU
+14:18:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:42 INFO  : 'con' command is executed.
+14:18:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:42 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:20:22 INFO  : Disconnected from the channel tcfchan#3.
+14:21:44 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:22:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:22:00 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:22:00 INFO  : 'jtag frequency' command is executed.
+14:22:00 INFO  : Context for 'APU' is selected.
+14:22:00 INFO  : System reset is completed.
+14:22:03 INFO  : 'after 3000' command is executed.
+14:22:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:22:05 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:22:05 INFO  : Context for 'APU' is selected.
+14:22:05 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:22:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:22:05 INFO  : Context for 'APU' is selected.
+14:22:05 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:22:05 INFO  : 'ps7_init' command is executed.
+14:22:05 INFO  : 'ps7_post_config' command is executed.
+14:22:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:05 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:22:05 INFO  : 'configparams force-mem-access 0' command is executed.
+14:22:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:22:05 INFO  : Memory regions updated for context APU
+14:22:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:22:06 INFO  : 'con' command is executed.
+14:22:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:22:06 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:23:16 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:23:20 INFO  : Disconnected from the channel tcfchan#5.
+14:25:01 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:25:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:25:13 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:25:13 INFO  : 'jtag frequency' command is executed.
+14:25:13 INFO  : Context for 'APU' is selected.
+14:25:13 INFO  : System reset is completed.
+14:25:16 INFO  : 'after 3000' command is executed.
+14:25:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:25:17 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:25:17 INFO  : Context for 'APU' is selected.
+14:25:17 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:25:17 INFO  : 'configparams force-mem-access 1' command is executed.
+14:25:17 INFO  : Context for 'APU' is selected.
+14:25:17 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:25:18 INFO  : 'ps7_init' command is executed.
+14:25:18 INFO  : 'ps7_post_config' command is executed.
+14:25:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:18 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:25:18 INFO  : 'configparams force-mem-access 0' command is executed.
+14:25:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:25:18 INFO  : Memory regions updated for context APU
+14:25:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:25:18 INFO  : 'con' command is executed.
+14:25:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:25:18 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:28:58 INFO  : Disconnected from the channel tcfchan#6.
+14:28:59 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:30:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:01 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:30:01 INFO  : 'jtag frequency' command is executed.
+14:30:01 INFO  : Context for 'APU' is selected.
+14:30:01 INFO  : System reset is completed.
+14:30:04 INFO  : 'after 3000' command is executed.
+14:30:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:30:05 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:30:05 INFO  : Context for 'APU' is selected.
+14:30:05 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:30:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:30:05 INFO  : Context for 'APU' is selected.
+14:30:05 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:30:06 INFO  : 'ps7_init' command is executed.
+14:30:06 INFO  : 'ps7_post_config' command is executed.
+14:30:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:06 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:30:06 INFO  : 'configparams force-mem-access 0' command is executed.
+14:30:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:30:06 INFO  : Memory regions updated for context APU
+14:30:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:06 INFO  : 'con' command is executed.
+14:30:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:30:06 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:35:11 INFO  : Disconnected from the channel tcfchan#7.
+14:35:57 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:36:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:19 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:36:19 INFO  : 'jtag frequency' command is executed.
+14:36:19 INFO  : Context for 'APU' is selected.
+14:36:19 INFO  : System reset is completed.
+14:36:22 INFO  : 'after 3000' command is executed.
+14:36:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:36:23 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:36:24 INFO  : Context for 'APU' is selected.
+14:36:24 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:36:24 INFO  : 'configparams force-mem-access 1' command is executed.
+14:36:24 INFO  : Context for 'APU' is selected.
+14:36:24 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:36:24 INFO  : 'ps7_init' command is executed.
+14:36:24 INFO  : 'ps7_post_config' command is executed.
+14:36:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:24 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:36:24 INFO  : 'configparams force-mem-access 0' command is executed.
+14:36:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:36:24 INFO  : Memory regions updated for context APU
+14:36:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:36:24 INFO  : 'con' command is executed.
+14:36:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:36:24 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:36:59 INFO  : Disconnected from the channel tcfchan#8.
+14:37:14 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:37:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:37:34 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:37:34 INFO  : 'jtag frequency' command is executed.
+14:37:34 INFO  : Context for 'APU' is selected.
+14:37:34 INFO  : System reset is completed.
+14:37:37 INFO  : 'after 3000' command is executed.
+14:37:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:37:38 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:37:38 INFO  : Context for 'APU' is selected.
+14:37:38 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:37:38 INFO  : 'configparams force-mem-access 1' command is executed.
+14:37:38 INFO  : Context for 'APU' is selected.
+14:37:38 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:37:38 INFO  : 'ps7_init' command is executed.
+14:37:39 INFO  : 'ps7_post_config' command is executed.
+14:37:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:39 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:37:39 INFO  : 'configparams force-mem-access 0' command is executed.
+14:37:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:37:39 INFO  : Memory regions updated for context APU
+14:37:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:37:39 INFO  : 'con' command is executed.
+14:37:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:37:39 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:38:15 INFO  : Disconnected from the channel tcfchan#9.
+14:38:26 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:38:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:34 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:38:34 INFO  : 'jtag frequency' command is executed.
+14:38:34 INFO  : Context for 'APU' is selected.
+14:38:34 INFO  : System reset is completed.
+14:38:37 INFO  : 'after 3000' command is executed.
+14:38:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:38:38 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:38:38 INFO  : Context for 'APU' is selected.
+14:38:38 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:38:38 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:38 INFO  : Context for 'APU' is selected.
+14:38:38 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:38:39 INFO  : 'ps7_init' command is executed.
+14:38:39 INFO  : 'ps7_post_config' command is executed.
+14:38:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:39 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:39 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:38:39 INFO  : Memory regions updated for context APU
+14:38:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:39 INFO  : 'con' command is executed.
+14:38:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:38:39 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:39:57 INFO  : Disconnected from the channel tcfchan#10.
+14:40:01 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:40:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:18 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:40:18 INFO  : 'jtag frequency' command is executed.
+14:40:18 INFO  : Context for 'APU' is selected.
+14:40:18 INFO  : System reset is completed.
+14:40:21 INFO  : 'after 3000' command is executed.
+14:40:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:40:22 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:40:22 INFO  : Context for 'APU' is selected.
+14:40:22 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:40:22 INFO  : 'configparams force-mem-access 1' command is executed.
+14:40:22 INFO  : Context for 'APU' is selected.
+14:40:22 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:40:23 INFO  : 'ps7_init' command is executed.
+14:40:23 INFO  : 'ps7_post_config' command is executed.
+14:40:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:23 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:40:23 INFO  : 'configparams force-mem-access 0' command is executed.
+14:40:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:40:23 INFO  : Memory regions updated for context APU
+14:40:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:40:23 INFO  : 'con' command is executed.
+14:40:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:40:23 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+14:47:48 INFO  : Disconnected from the channel tcfchan#11.
+14:47:56 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+14:48:06 INFO  : Launch of emulator has been cancelled. Launch configuration will be terminated.
+14:48:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:13 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+14:48:13 INFO  : 'jtag frequency' command is executed.
+14:48:13 INFO  : Context for 'APU' is selected.
+14:48:13 INFO  : System reset is completed.
+14:48:16 INFO  : 'after 3000' command is executed.
+14:48:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+14:48:18 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+14:48:18 INFO  : Context for 'APU' is selected.
+14:48:18 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+14:48:18 INFO  : 'configparams force-mem-access 1' command is executed.
+14:48:18 INFO  : Context for 'APU' is selected.
+14:48:18 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+14:48:18 INFO  : 'ps7_init' command is executed.
+14:48:18 INFO  : 'ps7_post_config' command is executed.
+14:48:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:18 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:48:18 INFO  : 'configparams force-mem-access 0' command is executed.
+14:48:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:48:19 INFO  : Memory regions updated for context APU
+14:48:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:19 INFO  : 'con' command is executed.
+14:48:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:48:19 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:01:18 INFO  : Hardware specification for platform project 'ZyboIPCreation_wrapper_1' is updated.
+15:01:49 INFO  : Disconnected from the channel tcfchan#12.
+15:01:55 INFO  : The hardware specfication used by project 'Lab1_attempt3' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+15:01:55 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream\ZyboIPCreation_wrapper.bit' stored in project is removed.
+15:01:55 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream' in project 'Lab1_attempt3'.
+15:01:55 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit\ps7_init.tcl' stored in project is removed.
+15:02:03 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit' in project 'Lab1_attempt3'.
+15:02:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:02:06 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:02:06 INFO  : 'jtag frequency' command is executed.
+15:02:06 INFO  : Context for 'APU' is selected.
+15:02:06 INFO  : System reset is completed.
+15:02:09 INFO  : 'after 3000' command is executed.
+15:02:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:02:10 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:02:10 INFO  : Context for 'APU' is selected.
+15:02:10 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:02:11 INFO  : 'configparams force-mem-access 1' command is executed.
+15:02:11 INFO  : Context for 'APU' is selected.
+15:02:11 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:02:11 INFO  : 'ps7_init' command is executed.
+15:02:11 INFO  : 'ps7_post_config' command is executed.
+15:02:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:11 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:02:11 INFO  : 'configparams force-mem-access 0' command is executed.
+15:02:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:02:11 INFO  : Memory regions updated for context APU
+15:02:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:02:11 INFO  : 'con' command is executed.
+15:02:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:02:11 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:02:41 INFO  : Disconnected from the channel tcfchan#14.
+15:03:00 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:03:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:03:07 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:03:07 INFO  : 'jtag frequency' command is executed.
+15:03:07 INFO  : Context for 'APU' is selected.
+15:03:07 INFO  : System reset is completed.
+15:03:10 INFO  : 'after 3000' command is executed.
+15:03:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:03:12 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:03:12 INFO  : Context for 'APU' is selected.
+15:03:12 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:03:12 INFO  : 'configparams force-mem-access 1' command is executed.
+15:03:12 INFO  : Context for 'APU' is selected.
+15:03:12 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:03:12 INFO  : 'ps7_init' command is executed.
+15:03:12 INFO  : 'ps7_post_config' command is executed.
+15:03:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:12 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:03:13 INFO  : 'configparams force-mem-access 0' command is executed.
+15:03:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:03:13 INFO  : Memory regions updated for context APU
+15:03:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:03:13 INFO  : 'con' command is executed.
+15:03:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:03:13 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:05:48 INFO  : Disconnected from the channel tcfchan#15.
+15:06:14 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:06:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:06:24 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:06:24 INFO  : 'jtag frequency' command is executed.
+15:06:24 INFO  : Context for 'APU' is selected.
+15:06:24 INFO  : System reset is completed.
+15:06:27 INFO  : 'after 3000' command is executed.
+15:06:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:06:29 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:06:29 INFO  : Context for 'APU' is selected.
+15:06:29 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:06:29 INFO  : 'configparams force-mem-access 1' command is executed.
+15:06:29 INFO  : Context for 'APU' is selected.
+15:06:29 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:06:29 INFO  : 'ps7_init' command is executed.
+15:06:29 INFO  : 'ps7_post_config' command is executed.
+15:06:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:30 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:06:30 INFO  : 'configparams force-mem-access 0' command is executed.
+15:06:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:06:30 INFO  : Memory regions updated for context APU
+15:06:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:06:30 INFO  : 'con' command is executed.
+15:06:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:06:30 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:07:30 INFO  : Disconnected from the channel tcfchan#16.
+15:07:32 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:07:45 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:07:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:07:54 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:07:54 INFO  : 'jtag frequency' command is executed.
+15:07:54 INFO  : Context for 'APU' is selected.
+15:07:54 INFO  : System reset is completed.
+15:07:57 INFO  : 'after 3000' command is executed.
+15:07:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:07:58 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:07:58 INFO  : Context for 'APU' is selected.
+15:07:58 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:07:58 INFO  : 'configparams force-mem-access 1' command is executed.
+15:07:58 INFO  : Context for 'APU' is selected.
+15:07:58 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:07:59 INFO  : 'ps7_init' command is executed.
+15:07:59 INFO  : 'ps7_post_config' command is executed.
+15:07:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:59 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:07:59 INFO  : 'configparams force-mem-access 0' command is executed.
+15:07:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:07:59 INFO  : Memory regions updated for context APU
+15:07:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:07:59 INFO  : 'con' command is executed.
+15:07:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:07:59 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:20:35 INFO  : Disconnected from the channel tcfchan#17.
+15:20:38 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:23:45 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:23:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:23:56 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:23:56 INFO  : 'jtag frequency' command is executed.
+15:23:56 INFO  : Context for 'APU' is selected.
+15:23:56 INFO  : System reset is completed.
+15:23:59 INFO  : 'after 3000' command is executed.
+15:23:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:24:00 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:24:00 INFO  : Context for 'APU' is selected.
+15:24:00 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:24:00 INFO  : 'configparams force-mem-access 1' command is executed.
+15:24:00 INFO  : Context for 'APU' is selected.
+15:24:00 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:24:01 INFO  : 'ps7_init' command is executed.
+15:24:01 INFO  : 'ps7_post_config' command is executed.
+15:24:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:01 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:24:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:24:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:24:01 INFO  : Memory regions updated for context APU
+15:24:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:24:01 INFO  : 'con' command is executed.
+15:24:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:24:01 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:24:49 INFO  : Disconnected from the channel tcfchan#18.
+15:24:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:24:56 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:24:56 INFO  : 'jtag frequency' command is executed.
+15:24:56 INFO  : Context for 'APU' is selected.
+15:24:56 INFO  : System reset is completed.
+15:24:59 INFO  : 'after 3000' command is executed.
+15:24:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:25:00 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:25:00 INFO  : Context for 'APU' is selected.
+15:25:00 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:25:00 INFO  : 'configparams force-mem-access 1' command is executed.
+15:25:00 INFO  : Context for 'APU' is selected.
+15:25:00 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:25:01 INFO  : 'ps7_init' command is executed.
+15:25:01 INFO  : 'ps7_post_config' command is executed.
+15:25:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:01 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:25:01 INFO  : 'configparams force-mem-access 0' command is executed.
+15:25:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:25:01 INFO  : Memory regions updated for context APU
+15:25:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:25:01 INFO  : 'con' command is executed.
+15:25:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:25:01 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:27:21 INFO  : Disconnected from the channel tcfchan#19.
+15:27:23 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:27:50 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:28:00 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:28:00 INFO  : 'jtag frequency' command is executed.
+15:28:00 INFO  : Context for 'APU' is selected.
+15:28:00 INFO  : System reset is completed.
+15:28:03 INFO  : 'after 3000' command is executed.
+15:28:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:28:04 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:28:04 INFO  : Context for 'APU' is selected.
+15:28:04 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:28:04 INFO  : 'configparams force-mem-access 1' command is executed.
+15:28:04 INFO  : Context for 'APU' is selected.
+15:28:04 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:28:05 INFO  : 'ps7_init' command is executed.
+15:28:05 INFO  : 'ps7_post_config' command is executed.
+15:28:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:05 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:28:05 INFO  : 'configparams force-mem-access 0' command is executed.
+15:28:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:28:05 INFO  : Memory regions updated for context APU
+15:28:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:28:05 INFO  : 'con' command is executed.
+15:28:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:28:05 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+15:58:15 INFO  : Disconnected from the channel tcfchan#20.
+15:58:17 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+15:58:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:31 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+15:58:31 INFO  : 'jtag frequency' command is executed.
+15:58:31 INFO  : Context for 'APU' is selected.
+15:58:31 INFO  : System reset is completed.
+15:58:34 INFO  : 'after 3000' command is executed.
+15:58:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+15:58:35 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+15:58:35 INFO  : Context for 'APU' is selected.
+15:58:35 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+15:58:35 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:35 INFO  : Context for 'APU' is selected.
+15:58:35 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+15:58:36 INFO  : 'ps7_init' command is executed.
+15:58:36 INFO  : 'ps7_post_config' command is executed.
+15:58:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:36 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:58:36 INFO  : 'configparams force-mem-access 0' command is executed.
+15:58:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:58:36 INFO  : Memory regions updated for context APU
+15:58:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:36 INFO  : 'con' command is executed.
+15:58:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:58:36 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:06:35 INFO  : Disconnected from the channel tcfchan#21.
+16:11:57 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:12:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:08 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+16:12:08 INFO  : 'jtag frequency' command is executed.
+16:12:08 INFO  : Context for 'APU' is selected.
+16:12:08 INFO  : System reset is completed.
+16:12:12 INFO  : 'after 3000' command is executed.
+16:12:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+16:12:13 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+16:12:13 INFO  : Context for 'APU' is selected.
+16:12:13 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+16:12:13 INFO  : 'configparams force-mem-access 1' command is executed.
+16:12:13 INFO  : Context for 'APU' is selected.
+16:12:13 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+16:12:13 INFO  : 'ps7_init' command is executed.
+16:12:13 INFO  : 'ps7_post_config' command is executed.
+16:12:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:14 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:14 INFO  : 'configparams force-mem-access 0' command is executed.
+16:12:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:12:14 INFO  : Memory regions updated for context APU
+16:12:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:14 INFO  : 'con' command is executed.
+16:12:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:12:14 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:13:48 INFO  : Disconnected from the channel tcfchan#22.
+16:13:52 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:14:02 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:14:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:14:10 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+16:14:10 INFO  : 'jtag frequency' command is executed.
+16:14:10 INFO  : Context for 'APU' is selected.
+16:14:10 INFO  : System reset is completed.
+16:14:13 INFO  : 'after 3000' command is executed.
+16:14:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+16:14:14 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+16:14:14 INFO  : Context for 'APU' is selected.
+16:14:14 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+16:14:14 INFO  : 'configparams force-mem-access 1' command is executed.
+16:14:14 INFO  : Context for 'APU' is selected.
+16:14:14 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+16:14:15 INFO  : 'ps7_init' command is executed.
+16:14:15 INFO  : 'ps7_post_config' command is executed.
+16:14:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:15 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:14:15 INFO  : 'configparams force-mem-access 0' command is executed.
+16:14:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:14:15 INFO  : Memory regions updated for context APU
+16:14:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:14:15 INFO  : 'con' command is executed.
+16:14:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:14:15 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:14:54 INFO  : Disconnected from the channel tcfchan#23.
+16:15:06 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:16:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:05 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+16:16:05 INFO  : 'jtag frequency' command is executed.
+16:16:05 INFO  : Context for 'APU' is selected.
+16:16:05 INFO  : System reset is completed.
+16:16:06 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:16:08 INFO  : 'after 3000' command is executed.
+16:16:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+16:16:10 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+16:16:10 INFO  : Context for 'APU' is selected.
+16:16:10 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+16:16:10 INFO  : 'configparams force-mem-access 1' command is executed.
+16:16:10 INFO  : Context for 'APU' is selected.
+16:16:10 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+16:16:10 INFO  : 'ps7_init' command is executed.
+16:16:10 INFO  : 'ps7_post_config' command is executed.
+16:16:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:10 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:16:11 INFO  : 'configparams force-mem-access 0' command is executed.
+16:16:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:16:11 INFO  : Memory regions updated for context APU
+16:16:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:11 INFO  : 'con' command is executed.
+16:16:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:16:11 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:16:13 INFO  : Disconnected from the channel tcfchan#24.
+16:16:17 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+16:16:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:21 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+16:16:22 INFO  : 'jtag frequency' command is executed.
+16:16:22 INFO  : Context for 'APU' is selected.
+16:16:22 INFO  : System reset is completed.
+16:16:25 INFO  : 'after 3000' command is executed.
+16:16:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+16:16:26 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+16:16:26 INFO  : Context for 'APU' is selected.
+16:16:26 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+16:16:26 INFO  : 'configparams force-mem-access 1' command is executed.
+16:16:26 INFO  : Context for 'APU' is selected.
+16:16:26 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+16:16:26 INFO  : 'ps7_init' command is executed.
+16:16:27 INFO  : 'ps7_post_config' command is executed.
+16:16:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:27 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:16:27 INFO  : 'configparams force-mem-access 0' command is executed.
+16:16:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:16:27 INFO  : Memory regions updated for context APU
+16:16:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:27 INFO  : 'con' command is executed.
+16:16:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:16:27 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:16:54 INFO  : Disconnected from the channel tcfchan#25.
+16:25:54 INFO  : Hardware specification for platform project 'ZyboIPCreation_wrapper_1' is updated.
+16:26:22 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_C'...
+16:26:22 ERROR : Failed to get platform details for the project 'GPIO_Example_C'. Cannot sync application flags.
+16:26:27 ERROR : Hardware specification file is not configured properly in the launch configuration 'Debugger_GPIO_Example_C-Default'. 
+Make sure that the application 'GPIO_Example_C' is built properly for configuration 'Debug' before launching.
+16:26:33 INFO  : Checking for BSP changes to sync application flags for project 'GPIO_Example_C'...
+16:26:33 ERROR : Failed to get platform details for the project 'GPIO_Example_C'. Cannot sync application flags.
+16:26:42 INFO  : The hardware specfication used by project 'Lab1_attempt3' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+16:26:42 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream\ZyboIPCreation_wrapper.bit' stored in project is removed.
+16:26:42 INFO  : The updated bitstream files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\bitstream' in project 'Lab1_attempt3'.
+16:26:42 INFO  : The file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit\ps7_init.tcl' stored in project is removed.
+16:26:50 INFO  : The updated ps init files are copied from platform to folder 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\Lab1_attempt3\_ide\psinit' in project 'Lab1_attempt3'.
+16:26:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:26:53 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+16:26:53 INFO  : 'jtag frequency' command is executed.
+16:26:53 INFO  : Context for 'APU' is selected.
+16:26:53 INFO  : System reset is completed.
+16:26:56 INFO  : 'after 3000' command is executed.
+16:26:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+16:26:58 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+16:26:58 INFO  : Context for 'APU' is selected.
+16:26:58 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+16:26:58 INFO  : 'configparams force-mem-access 1' command is executed.
+16:26:58 INFO  : Context for 'APU' is selected.
+16:26:58 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+16:26:58 INFO  : 'ps7_init' command is executed.
+16:26:58 INFO  : 'ps7_post_config' command is executed.
+16:26:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:58 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:26:58 INFO  : 'configparams force-mem-access 0' command is executed.
+16:26:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:26:58 INFO  : Memory regions updated for context APU
+16:26:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:26:59 INFO  : 'con' command is executed.
+16:26:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:26:59 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+16:27:44 INFO  : Disconnected from the channel tcfchan#27.
+17:26:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\temp_xsdb_launch_script.tcl
+17:27:01 INFO  : XSCT server has started successfully.
+17:27:01 INFO  : plnx-install-location is set to ''
+17:27:01 INFO  : Successfully done setting XSCT server connection channel  
+17:27:01 INFO  : Successfully done setting workspace for the tool. 
+17:27:04 INFO  : Registering command handlers for Vitis TCF services
+17:27:08 INFO  : Successfully done query RDI_DATADIR 
+18:16:46 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:17:11 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:17:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:27 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:17:27 INFO  : 'jtag frequency' command is executed.
+18:17:27 INFO  : Context for 'APU' is selected.
+18:17:28 INFO  : System reset is completed.
+18:17:31 INFO  : 'after 3000' command is executed.
+18:17:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:17:33 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:17:33 INFO  : Context for 'APU' is selected.
+18:17:33 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:17:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:33 INFO  : Context for 'APU' is selected.
+18:17:33 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:17:35 INFO  : 'ps7_init' command is executed.
+18:17:35 INFO  : 'ps7_post_config' command is executed.
+18:17:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:36 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:36 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:36 INFO  : Memory regions updated for context APU
+18:17:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:36 INFO  : 'con' command is executed.
+18:17:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:17:36 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+18:33:18 INFO  : Disconnected from the channel tcfchan#1.
+18:33:19 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:33:29 INFO  : Checking for BSP changes to sync application flags for project 'Lab1_attempt3'...
+18:33:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:39 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:33:39 INFO  : 'jtag frequency' command is executed.
+18:33:39 INFO  : Context for 'APU' is selected.
+18:33:39 INFO  : System reset is completed.
+18:33:42 INFO  : 'after 3000' command is executed.
+18:33:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:33:43 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:33:43 INFO  : Context for 'APU' is selected.
+18:33:43 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:33:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:33:43 INFO  : Context for 'APU' is selected.
+18:33:43 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:33:44 INFO  : 'ps7_init' command is executed.
+18:33:44 INFO  : 'ps7_post_config' command is executed.
+18:33:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:44 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:33:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:33:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:33:44 INFO  : Memory regions updated for context APU
+18:33:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:44 INFO  : 'con' command is executed.
+18:33:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:33:44 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+18:35:11 INFO  : Disconnected from the channel tcfchan#2.
+18:35:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:35:26 INFO  : Jtag cable 'Digilent Zybo 210279A7928DA' is selected.
+18:35:27 INFO  : 'jtag frequency' command is executed.
+18:35:27 INFO  : Context for 'APU' is selected.
+18:35:27 INFO  : System reset is completed.
+18:35:30 INFO  : 'after 3000' command is executed.
+18:35:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1' command is executed.
+18:35:31 INFO  : FPGA configured successfully with bitstream "D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit"
+18:35:31 INFO  : Context for 'APU' is selected.
+18:35:33 INFO  : Hardware design information is loaded from 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa'.
+18:35:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:35:33 INFO  : Context for 'APU' is selected.
+18:35:33 INFO  : Sourcing of 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl' is done.
+18:35:34 INFO  : 'ps7_init' command is executed.
+18:35:34 INFO  : 'ps7_post_config' command is executed.
+18:35:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:34 INFO  : The application 'D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:35:34 INFO  : 'configparams force-mem-access 0' command is executed.
+18:35:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279A7928DA" && level==0} -index 1
+fpga -file D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/hw/ZyboIPCreation_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:35:34 INFO  : Memory regions updated for context APU
+18:35:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:35:34 INFO  : 'con' command is executed.
+18:35:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:35:34 INFO  : Launch script is exported to file 'D:\Y4\hardsoft\Lab\create_project_2019\Workspace.vitas\.sdk\launch_scripts\single_application_debug\debugger_lab1_attempt3-default.tcl'
+19:09:43 INFO  : Disconnected from the channel tcfchan#3.

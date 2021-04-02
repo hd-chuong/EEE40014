@@ -1,4 +1,4 @@
-10:53:53 **** Incremental Build of configuration Debug for project GPIO_Example_C ****
+16:26:33 **** Incremental Build of configuration Debug for project GPIO_Example_C ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,5 +6,5 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
 
-10:53:53 Build Finished (took 259ms)
+16:26:33 Build Finished (took 269ms)
 

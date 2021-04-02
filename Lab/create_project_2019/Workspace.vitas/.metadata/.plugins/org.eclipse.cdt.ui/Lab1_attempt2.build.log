@@ -1,0 +1,22 @@
+14:34:58 **** Build of configuration Debug for project Lab1_attempt2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/export/ZyboIPCreation_wrapper/sw/ZyboIPCreation_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:26:56: error: 'XPAR_MYGPIO_0_S00_AXI_BASEADDR' was not declared in this scope
+    static MyIp * const myIp = reinterpret_cast<MyIp *>(XPAR_MYGPIO_0_S00_AXI_BASEADDR);
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.cpp:26:56: note: suggested alternative: 'XPAR_MYGPIO2_0_S00_AXI_BASEADDR'
+    static MyIp * const myIp = reinterpret_cast<MyIp *>(XPAR_MYGPIO_0_S00_AXI_BASEADDR);
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                        XPAR_MYGPIO2_0_S00_AXI_BASEADDR
+make[1]: *** [src/subdir.mk:23: src/main.o] Error 1
+make: *** [makefile:46: all] Error 2
+
+14:35:00 Build Finished (took 1s.527ms)
+

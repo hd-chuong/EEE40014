@@ -1,4 +1,4 @@
-2021-03-14T13:43:10.654760100255-13:43:10 **** Build of configuration Debug for project GPIO_Example_CPP ****
+2021-03-28T14:09:43.576576500255-14:09:43 **** Incremental Build of configuration Debug for project GPIO_Example_CPP ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
@@ -6,25 +6,13 @@
 000-make --no-print-directory main-build
 000-'Building file: ../src/main.cpp'
 000-'Invoking: ARM v7 g++ compiler'
-000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
-000-'Finished building: ../src/main.cpp'
-000-' '
-000-'Building file: ../src/platform.c'
-000-'Invoking: ARM v7 g++ compiler'
-000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-000-'Finished building: ../src/platform.c'
-000-' '
-000-'Building target: GPIO_Example_CPP.elf'
-000-'Invoking: ARM v7 g++ linker'
-000-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/bsplib/lib -o "GPIO_Example_CPP.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-000-'Finished building target: GPIO_Example_CPP.elf'
-000-' '
-000-'Invoking: ARM v7 Print Size'
-000-arm-none-eabi-size GPIO_Example_CPP.elf  |tee "GPIO_Example_CPP.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000-  38652	   2584	  23320	  64556	   fc2c	GPIO_Example_CPP.elf
-000-'Finished building: GPIO_Example_CPP.elf.size'
-000-' '
+000-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_CPP/Debug/_sdk/bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+000/GPIO_Example_CPP/src/main.cpp12-1-1fatal error: xparameters.h: No such file or directory2-../src/main.cpp:12:10: fatal error: xparameters.h: No such file or directory
+000- #include "xparameters.h"
+000-          ^~~~~~~~~~~~~~~
+000-compilation terminated.
+000/GPIO_Example_CPP0-1-1make[1]: *** [src/subdir.mk:30: src/main.o] Error 12-make[1]: *** [src/subdir.mk:30: src/main.o] Error 1
+000/GPIO_Example_CPP0-1-1make: *** [makefile:46: all] Error 22-make: *** [makefile:46: all] Error 2
 00255-
-13:43:13 Build Finished (took 2s.573ms)
+14:09:43 Build Finished (took 368ms)
 

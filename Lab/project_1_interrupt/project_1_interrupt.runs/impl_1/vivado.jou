@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 30 15:40:06 2021
+# Process ID: 936
+# Current directory: D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.runs/impl_1
+# Command line: vivado.exe -log ZyboIPCreation_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ZyboIPCreation_wrapper.tcl -notrace
+# Log file: D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.runs/impl_1/ZyboIPCreation_wrapper.vdi
+# Journal file: D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ZyboIPCreation_wrapper.tcl -notrace

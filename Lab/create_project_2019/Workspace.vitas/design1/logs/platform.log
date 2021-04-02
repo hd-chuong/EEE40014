@@ -3237,3 +3237,973 @@ TRACE::2021-03-18.10:53:32::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/cre
 D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2021-03-18.10:53:32::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:12::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:12::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:12::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:12::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:12::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:12::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:12::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWReader::Active system found as  design1
+TRACE::2021-03-22.14:28:14::SCWReader::Handling sysconfig design1
+TRACE::2021-03-22.14:28:14::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-22.14:28:14::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-22.14:28:14::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-03-22.14:28:14::SCWMssOS::No sw design opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::mss exists loading the mss file  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::Opened the sw design from mss  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::Adding the swdes entry D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-22.14:28:14::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-22.14:28:14::SCWMssOS::Opened the sw design.  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:14::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:14::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2021-03-22.14:28:14::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-22.14:28:14::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:14::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWReader::No isolation master present  
+TRACE::2021-03-22.14:28:14::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-22.14:28:14::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-22.14:28:14::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:14::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:14::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:14::SCWMssOS::No sw design opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::mss exists loading the mss file  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::Opened the sw design from mss  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:14::SCWMssOS::Adding the swdes entry D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-22.14:28:14::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-22.14:28:15::SCWMssOS::Opened the sw design.  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-22.14:28:15::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-22.14:28:15::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:15::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:15::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWReader::No isolation master present  
+LOG::2021-03-22.14:28:15::SCWPlatform::Started generating the artifacts platform design1
+TRACE::2021-03-22.14:28:15::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-03-22.14:28:15::SCWPlatform::Started generating the artifacts for system configuration design1
+LOG::2021-03-22.14:28:15::SCWSystem::Checking the domain zynq_fsbl
+LOG::2021-03-22.14:28:15::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2021-03-22.14:28:15::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-03-22.14:28:15::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2021-03-22.14:28:15::SCWSystem::Checking the domain standalone_domain
+LOG::2021-03-22.14:28:15::SCWSystem::Not a boot domain 
+LOG::2021-03-22.14:28:15::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-03-22.14:28:15::SCWDomain::Generating domain artifcats
+TRACE::2021-03-22.14:28:15::SCWMssOS::Generating standalone artifcats
+TRACE::2021-03-22.14:28:15::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/qemu/
+TRACE::2021-03-22.14:28:15::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt To D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/export/design1/sw/design1/standalone_domain/qemu/
+TRACE::2021-03-22.14:28:15::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-03-22.14:28:15::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:15::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:15::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:15::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:15::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:15::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWMssOS::Completed writing the mss file at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2021-03-22.14:28:15::SCWMssOS::Mss edits present, copying mssfile into export location D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:15::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-03-22.14:28:15::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-03-22.14:28:15::SCWDomain::Building the domain :  standalone_domain
+TRACE::2021-03-22.14:28:15::SCWMssOS::doing bsp build ... 
+TRACE::2021-03-22.14:28:15::SCWMssOS::System Command Ran  D: & cd  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2021-03-22.14:28:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2021-03-22.14:28:15::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2021-03-22.14:28:15::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-22.14:28:15::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-22.14:28:15::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-22.14:28:15::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-22.14:28:15::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2021-03-22.14:28:15::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:15::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:15::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-22.14:28:16::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-22.14:28:16::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-22.14:28:16::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-22.14:28:16::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-22.14:28:16::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-22.14:28:16::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2021-03-22.14:28:16::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2021-03-22.14:28:16::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:16::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:16::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-22.14:28:16::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-22.14:28:16::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2021-03-22.14:28:16::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2021-03-22.14:28:16::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2021-03-22.14:28:16::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:17::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:17::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:17::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:17::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-22.14:28:17::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-22.14:28:17::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2021-03-22.14:28:17::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2021-03-22.14:28:17::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2021-03-22.14:28:17::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2021-03-22.14:28:17::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:17::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2021-03-22.14:28:19::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2021-03-22.14:28:19::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-22.14:28:19::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-22.14:28:19::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Compiling ddrps"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:19::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:19::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:19::SCWMssOS::"Compiling devcfg"
+
+TRACE::2021-03-22.14:28:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_5/src"
+
+TRACE::2021-03-22.14:28:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-22.14:28:20::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-22.14:28:20::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:20::SCWMssOS::"Compiling dmaps"
+
+TRACE::2021-03-22.14:28:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_10/src"
+
+TRACE::2021-03-22.14:28:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2021-03-22.14:28:21::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2021-03-22.14:28:21::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:21::SCWMssOS::"Compiling emacps"
+
+TRACE::2021-03-22.14:28:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_6/src"
+
+TRACE::2021-03-22.14:28:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:23::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:23::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:23::SCWMssOS::"Compiling gpiops"
+
+TRACE::2021-03-22.14:28:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_5/src"
+
+TRACE::2021-03-22.14:28:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpio_v4_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-03-22.14:28:24::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-03-22.14:28:24::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:24::SCWMssOS::"Compiling gpio"
+
+TRACE::2021-03-22.14:28:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+
+TRACE::2021-03-22.14:28:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:25::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:25::SCWMssOS::"Compiling qspips"
+
+TRACE::2021-03-22.14:28:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_1/src"
+
+TRACE::2021-03-22.14:28:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:27::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:27::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:27::SCWMssOS::"Compiling scugic"
+
+TRACE::2021-03-22.14:28:28::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+
+TRACE::2021-03-22.14:28:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2021-03-22.14:28:28::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2021-03-22.14:28:28::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:28::SCWMssOS::"Compiling scutimer"
+
+TRACE::2021-03-22.14:28:28::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+
+TRACE::2021-03-22.14:28:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:28::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:28::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:29::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2021-03-22.14:28:29::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_8/src"
+
+TRACE::2021-03-22.14:28:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2021-03-22.14:28:29::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2021-03-22.14:28:29::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:29::SCWMssOS::"Compiling sdps"
+
+TRACE::2021-03-22.14:28:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_1/src"
+
+TRACE::2021-03-22.14:28:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2021-03-22.14:28:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2021-03-22.14:28:31::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:31::SCWMssOS::"Compiling standalone"
+
+TRACE::2021-03-22.14:28:36::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2021-03-22.14:28:36::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ttcps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:36::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:36::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:36::SCWMssOS::"Compiling ttcps"
+
+TRACE::2021-03-22.14:28:37::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_8/src"
+
+TRACE::2021-03-22.14:28:37::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:37::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:37::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:37::SCWMssOS::"Compiling uartps"
+
+TRACE::2021-03-22.14:28:38::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+
+TRACE::2021-03-22.14:28:38::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2021-03-22.14:28:38::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2021-03-22.14:28:38::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:38::SCWMssOS::"Compiling usbps"
+
+TRACE::2021-03-22.14:28:40::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+
+TRACE::2021-03-22.14:28:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2021-03-22.14:28:40::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2021-03-22.14:28:40::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2021-03-22.14:28:40::SCWMssOS::"Compiling xadcps"
+
+TRACE::2021-03-22.14:28:41::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-03-22.14:28:41::SCWMssOS::Copying to export directory.
+TRACE::2021-03-22.14:28:41::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-03-22.14:28:41::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-03-22.14:28:41::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-03-22.14:28:41::SCWSystem::Completed Processing the sysconfig design1
+LOG::2021-03-22.14:28:41::SCWPlatform::Completed generating the artifacts for system configuration design1
+TRACE::2021-03-22.14:28:41::SCWPlatform::Started preparing the platform 
+TRACE::2021-03-22.14:28:41::SCWSystem::Writing the bif file for system config design1
+TRACE::2021-03-22.14:28:41::SCWSystem::dir created 
+TRACE::2021-03-22.14:28:41::SCWSystem::Writing the bif 
+TRACE::2021-03-22.14:28:41::SCWPlatform::Started writing the spfm file 
+TRACE::2021-03-22.14:28:41::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-03-22.14:28:41::SCWPlatform::Completed generating the platform
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:41::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:41::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:41::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:41::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:41::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:41::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:41::SCWWriter::formatted JSON is {
+	"platformName":	"design1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design1",
+	"platHandOff":	"D:/Y4/hardsoft/Lab/create_project_2019/design1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design1.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design1",
+	"systems":	[{
+			"systemName":	"design1",
+			"systemDesc":	"design1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d54b9b286e99a71b3341dc2052f1c68",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4bf53d4227447e39e4baaf8fa7f31d46",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-03-22.14:28:41::SCWPlatform::updated the xpfm file.
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:28:41::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:28:41::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2021-03-22.14:28:41::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:28:41::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:28:41::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:28:41::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:28::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-22.14:36:28::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-22.14:36:28::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-22.14:36:28::SCWMssOS::Removing the swdes entry for  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:28::SCWMssOS::Removing the swdes entry for  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:28::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-22.14:36:28::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-22.14:36:28::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform:: Platform location is D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:28::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:28::SCWPlatform::Removing the HwDB with name D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:28::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:28::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:28::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWReader::Active system found as  design1
+TRACE::2021-03-22.14:36:30::SCWReader::Handling sysconfig design1
+TRACE::2021-03-22.14:36:30::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-22.14:36:30::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-22.14:36:30::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:30::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:30::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+
+TRACE::2021-03-22.14:36:30::SCWMssOS::No sw design opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::mss exists loading the mss file  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::Opened the sw design from mss  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::Adding the swdes entry D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2021-03-22.14:36:30::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-22.14:36:30::SCWMssOS::Opened the sw design.  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:30::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:36:30::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS:: library already available in sw design:  xilffs:4.2
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:30::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:30::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:36:30::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:30::SCWMssOS:: library already available in sw design:  xilrsa:1.5
+TRACE::2021-03-22.14:36:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-22.14:36:31::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:31::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:36:31::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWReader::No isolation master present  
+TRACE::2021-03-22.14:36:31::SCWDomain::checking for install qemu data   : 
+TRACE::2021-03-22.14:36:31::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/
+TRACE::2021-03-22.14:36:31::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:31::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:36:31::SCWMssOS::No sw design opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::mss exists loading the mss file  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::Opened the sw design from mss  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::Adding the swdes entry D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2021-03-22.14:36:31::SCWMssOS::updating the scw layer about changes
+TRACE::2021-03-22.14:36:31::SCWMssOS::Opened the sw design.  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2021-03-22.14:36:31::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:36:31::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:36:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:36:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:36:31::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:36:31::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:36:31::SCWReader::No isolation master present  
+TRACE::2021-03-22.14:37:08::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:08::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:08::SCWPlatform:: Platform location is D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa
+TRACE::2021-03-22.14:37:08::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:08::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:11::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:37:11::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::update - Opened existing hwdb design_1_wrapper_2
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:37:11::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:37:11::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/tempdsa/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::update - Opened existing hwdb design_1_wrapper_2
+TRACE::2021-03-22.14:37:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:11::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2021-03-22.14:37:11::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2021-03-22.14:37:11::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:11::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:11::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-03-22.14:37:13::SCWPlatform::Opened new HwDB with name design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:13::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:37:13::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:13::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:37:13::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to open the hw design at D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform::DSA directory D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:37:13::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:37:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Opened existing hwdb design_1_wrapper_3
+TRACE::2021-03-22.14:37:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-03-22.14:37:13::SCWMssOS::Checking the sw design at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWMssOS::DEBUG:  swdes dump  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_2||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_1||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2021-03-22.14:37:13::SCWMssOS::Sw design exists and opened at  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:37:13::SCWWriter::formatted JSON is {
+	"platformName":	"design1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"design1",
+	"platHandOff":	"D:/Y4/hardsoft/Lab/create_project_2019/design1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design1.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"design1",
+	"systems":	[{
+			"systemName":	"design1",
+			"systemDesc":	"design1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"design1",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"9d54b9b286e99a71b3341dc2052f1c68",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilrsa:1.5"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"E:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4bf53d4227447e39e4baaf8fa7f31d46",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-03-22.14:39:33::SCWPlatform::Clearing the existing platform
+TRACE::2021-03-22.14:39:33::SCWSystem::Clearing the existing sysconfig
+TRACE::2021-03-22.14:39:33::SCWBDomain::clearing the fsbl build
+TRACE::2021-03-22.14:39:33::SCWMssOS::Removing the swdes entry for  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2021-03-22.14:39:33::SCWMssOS::Removing the swdes entry for  D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2021-03-22.14:39:34::SCWSystem::Clearing the domains completed.
+TRACE::2021-03-22.14:39:34::SCWPlatform::Clearing the opened hw db.
+TRACE::2021-03-22.14:39:34::SCWPlatform::DSA given D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:39:34::SCWPlatform::DSA absoulate path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:39:34::SCWPlatform:: Platform location is D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw
+TRACE::2021-03-22.14:39:34::SCWPlatform:: Platform Path D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa
+TRACE::2021-03-22.14:39:34::SCWPlatform:: Unique name xilinx:zybo::0.0
+TRACE::2021-03-22.14:39:34::SCWPlatform::Removing the HwDB with name D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design1/hw/design1.xsa

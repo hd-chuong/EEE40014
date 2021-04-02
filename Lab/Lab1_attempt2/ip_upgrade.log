@@ -1,0 +1,58 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Mar 28 16:20:30 2021
+| Host         : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ZyboIPCreation_myGpio2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ZyboIPCreation_myGpio2_0_0 (xilinx.com:user:myGpio2:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Mar 28 16:18:01 2021
+| Host         : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ZyboIPCreation_myGpio2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ZyboIPCreation_myGpio2_0_0 (xilinx.com:user:myGpio2:1.0) from (Rev. 10) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Mar 28 13:15:45 2021
+| Host         : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ZyboIPCreation_myGpio2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ZyboIPCreation_myGpio2_0_0 (xilinx.com:user:myGpio2:1.0) from (Rev. 9) to (Rev. 10)
+
