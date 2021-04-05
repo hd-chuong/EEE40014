@@ -12,6 +12,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports GPIO_0_tri_io[2]]
 set_property PACKAGE_PIN D18 [get_ports GPIO_0_tri_io[3]]
 set_property IOSTANDARD LVCMOS33 [get_ports GPIO_0_tri_io[3]]
 
+#set_property PACKAGE_PIN MIO7 [get_ports IRQ_0]
+#set_property IOSTANDARD LVCMOS33 [get_ports IRQ_0]
+
 ## SWITCHs
 # SWC0 - IO_L23P_T3_35
 set_property PACKAGE_PIN G15 [get_ports GPIO_0_tri_io[4]]

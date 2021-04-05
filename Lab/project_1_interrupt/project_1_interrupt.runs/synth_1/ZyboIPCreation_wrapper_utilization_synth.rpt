@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Mar 30 15:39:59 2021
+| Date         : Tue Apr  6 03:08:31 2021
 | Host         : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ZyboIPCreation_wrapper_utilization_synth.rpt -pb ZyboIPCreation_wrapper_utilization_synth.pb
 | Design       : ZyboIPCreation_wrapper
@@ -157,9 +157,9 @@ Table of Contents
 +---------------------------------------+------+
 |                Ref Name               | Used |
 +---------------------------------------+------+
-| ZyboIPCreation_rst_ps7_0_100M_3       |    1 |
-| ZyboIPCreation_processing_system7_0_1 |    1 |
-| ZyboIPCreation_myGpio2_0_0            |    1 |
+| ZyboIPCreation_rst_ps7_0_100M_4       |    1 |
+| ZyboIPCreation_processing_system7_0_2 |    1 |
+| ZyboIPCreation_myGpio2_0_1            |    1 |
 | ZyboIPCreation_auto_pc_0              |    1 |
 +---------------------------------------+------+
 

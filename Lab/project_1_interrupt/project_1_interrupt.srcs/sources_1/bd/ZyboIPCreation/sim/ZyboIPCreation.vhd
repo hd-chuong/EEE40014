@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Mar 30 15:38:27 2021
+--Date        : Tue Apr  6 03:05:46 2021
 --Host        : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
 --Command     : generate_target ZyboIPCreation.bd
 --Design      : ZyboIPCreation
@@ -327,7 +327,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity ZyboIPCreation_ps7_0_axi_periph_3 is
+entity ZyboIPCreation_ps7_0_axi_periph_4 is
   port (
     ACLK : in STD_LOGIC;
     ARESETN : in STD_LOGIC;
@@ -393,9 +393,9 @@ entity ZyboIPCreation_ps7_0_axi_periph_3 is
     S00_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S00_AXI_wvalid : in STD_LOGIC
   );
-end ZyboIPCreation_ps7_0_axi_periph_3;
+end ZyboIPCreation_ps7_0_axi_periph_4;
 
-architecture STRUCTURE of ZyboIPCreation_ps7_0_axi_periph_3 is
+architecture STRUCTURE of ZyboIPCreation_ps7_0_axi_periph_4 is
   signal S00_ACLK_1 : STD_LOGIC;
   signal S00_ARESETN_1 : STD_LOGIC;
   signal ps7_0_axi_periph_ACLK_net : STD_LOGIC;
@@ -616,13 +616,13 @@ entity ZyboIPCreation is
     GPIO_0_tri_t : out STD_LOGIC_VECTOR ( 11 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of ZyboIPCreation : entity is "ZyboIPCreation,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ZyboIPCreation,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_ps7_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of ZyboIPCreation : entity is "ZyboIPCreation,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=ZyboIPCreation,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=5,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of ZyboIPCreation : entity is "ZyboIPCreation.hwdef";
 end ZyboIPCreation;
 
 architecture STRUCTURE of ZyboIPCreation is
-  component ZyboIPCreation_processing_system7_0_1 is
+  component ZyboIPCreation_processing_system7_0_2 is
   port (
     ENET0_MDIO_MDC : out STD_LOGIC;
     ENET0_MDIO_O : out STD_LOGIC;
@@ -699,8 +699,8 @@ architecture STRUCTURE of ZyboIPCreation is
     PS_CLK : inout STD_LOGIC;
     PS_PORB : inout STD_LOGIC
   );
-  end component ZyboIPCreation_processing_system7_0_1;
-  component ZyboIPCreation_rst_ps7_0_100M_3 is
+  end component ZyboIPCreation_processing_system7_0_2;
+  component ZyboIPCreation_rst_ps7_0_100M_4 is
   port (
     slowest_sync_clk : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC;
@@ -713,8 +713,8 @@ architecture STRUCTURE of ZyboIPCreation is
     interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component ZyboIPCreation_rst_ps7_0_100M_3;
-  component ZyboIPCreation_myGpio2_0_0 is
+  end component ZyboIPCreation_rst_ps7_0_100M_4;
+  component ZyboIPCreation_myGpio2_0_1 is
   port (
     GPIO_I : in STD_LOGIC_VECTOR ( 11 downto 0 );
     GPIO_O : out STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -742,7 +742,7 @@ architecture STRUCTURE of ZyboIPCreation is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component ZyboIPCreation_myGpio2_0_0;
+  end component ZyboIPCreation_myGpio2_0_1;
   signal myGpio2_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal myGpio2_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal myGpio2_0_GPIO_TRI_T : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -872,7 +872,7 @@ begin
   GPIO_0_tri_o(11 downto 0) <= myGpio2_0_GPIO_TRI_O(11 downto 0);
   GPIO_0_tri_t(11 downto 0) <= myGpio2_0_GPIO_TRI_T(11 downto 0);
   myGpio2_0_GPIO_TRI_I(11 downto 0) <= GPIO_0_tri_i(11 downto 0);
-myGpio2_0: component ZyboIPCreation_myGpio2_0_0
+myGpio2_0: component ZyboIPCreation_myGpio2_0_1
      port map (
       GPIO_I(11 downto 0) => myGpio2_0_GPIO_TRI_I(11 downto 0),
       GPIO_O(11 downto 0) => myGpio2_0_GPIO_TRI_O(11 downto 0),
@@ -900,7 +900,7 @@ myGpio2_0: component ZyboIPCreation_myGpio2_0_0
       s00_axi_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => ps7_0_axi_periph_M00_AXI_WVALID
     );
-processing_system7_0: component ZyboIPCreation_processing_system7_0_1
+processing_system7_0: component ZyboIPCreation_processing_system7_0_2
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
       DDR_BankAddr(2 downto 0) => DDR_ba(2 downto 0),
@@ -977,7 +977,7 @@ processing_system7_0: component ZyboIPCreation_processing_system7_0_1
       USB0_VBUS_PWRFAULT => '0',
       USB0_VBUS_PWRSELECT => NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED
     );
-ps7_0_axi_periph: entity work.ZyboIPCreation_ps7_0_axi_periph_3
+ps7_0_axi_periph: entity work.ZyboIPCreation_ps7_0_axi_periph_4
      port map (
       ACLK => processing_system7_0_FCLK_CLK0,
       ARESETN => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -1043,7 +1043,7 @@ ps7_0_axi_periph: entity work.ZyboIPCreation_ps7_0_axi_periph_3
       S00_AXI_wstrb(3 downto 0) => processing_system7_0_M_AXI_GP0_WSTRB(3 downto 0),
       S00_AXI_wvalid => processing_system7_0_M_AXI_GP0_WVALID
     );
-rst_ps7_0_100M: component ZyboIPCreation_rst_ps7_0_100M_3
+rst_ps7_0_100M: component ZyboIPCreation_rst_ps7_0_100M_4
      port map (
       aux_reset_in => '1',
       bus_struct_reset(0) => NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED(0),

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Mar 30 15:41:08 2021
+| Date             : Tue Apr  6 03:11:09 2021
 | Host             : DESKTOP-5DA4G9P running 64-bit major release  (build 9200)
 | Command          : report_power -file ZyboIPCreation_wrapper_power_routed.rpt -pb ZyboIPCreation_wrapper_power_summary_routed.pb -rpx ZyboIPCreation_wrapper_power_routed.rpx
 | Design           : ZyboIPCreation_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.692        |
+| Total On-Chip Power (W)  | 1.693        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.568        |
+| Dynamic (W)              | 1.569        |
 | Device Static (W)        | 0.124        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.5         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     1369 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      396 |     17600 |            2.25 |
-|   Register              |    <0.001 |      593 |     35200 |            1.68 |
+| Slice Logic             |     0.001 |     1481 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      446 |     17600 |            2.53 |
+|   Register              |    <0.001 |      657 |     35200 |            1.87 |
 |   CARRY4                |    <0.001 |       12 |      4400 |            0.27 |
 |   LUT as Shift Register |    <0.001 |       60 |      6000 |            1.00 |
-|   Others                |     0.000 |      186 |       --- |             --- |
-| Signals                 |     0.002 |      971 |       --- |             --- |
+|   Others                |     0.000 |      185 |       --- |             --- |
+| Signals                 |     0.002 |     1085 |       --- |             --- |
 | I/O                     |     0.006 |       12 |       100 |           12.00 |
 | PS7                     |     1.556 |        1 |       --- |             --- |
 | Static Power            |     0.124 |          |           |                 |
-| Total                   |     1.692 |          |           |                 |
+| Total                   |     1.693 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.005 |      0.007 |
+| Vccint    |       1.000 |     0.013 |       0.006 |      0.007 |
 | Vccaux    |       1.800 |     0.008 |       0.000 |      0.008 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,8 +149,10 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| ZyboIPCreation_wrapper   |     1.568 |
-|   ZyboIPCreation_i       |     1.562 |
+| ZyboIPCreation_wrapper   |     1.569 |
+|   ZyboIPCreation_i       |     1.563 |
+|     myGpio2_0            |     0.001 |
+|       U0                 |     0.001 |
 |     processing_system7_0 |     1.557 |
 |       inst               |     1.557 |
 |     ps7_0_axi_periph     |     0.004 |

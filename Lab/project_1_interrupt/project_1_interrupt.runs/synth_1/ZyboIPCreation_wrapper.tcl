@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -37,10 +36,10 @@ set_property ip_output_repo d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_int
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/hdl/ZyboIPCreation_wrapper.vhd
 add_files D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ZyboIPCreation.bd
-set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_processing_system7_0_1/ZyboIPCreation_processing_system7_0_1.xdc]
-set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_3/ZyboIPCreation_rst_ps7_0_100M_3_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_3/ZyboIPCreation_rst_ps7_0_100M_3.xdc]
-set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_3/ZyboIPCreation_rst_ps7_0_100M_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_processing_system7_0_2/ZyboIPCreation_processing_system7_0_2.xdc]
+set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_4/ZyboIPCreation_rst_ps7_0_100M_4_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_4/ZyboIPCreation_rst_ps7_0_100M_4.xdc]
+set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_4/ZyboIPCreation_rst_ps7_0_100M_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all d:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ip/ZyboIPCreation_auto_pc_0/ZyboIPCreation_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/Y4/hardsoft/Lab/project_1_interrupt/project_1_interrupt.srcs/sources_1/bd/ZyboIPCreation/ZyboIPCreation_ooc.xdc]
 

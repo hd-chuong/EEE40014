@@ -168,7 +168,7 @@ proc create_root_design { parentCell } {
   # Create instance: myGpio2_0, and set properties
   set myGpio2_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:myGpio2:1.0 myGpio2_0 ]
   set_property -dict [ list \
-   CONFIG.INDEX_REG {3} \
+   CONFIG.INTERRUPT_EN {1} \
  ] $myGpio2_0
 
   # Create instance: processing_system7_0, and set properties

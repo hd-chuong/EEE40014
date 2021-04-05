@@ -6,17 +6,17 @@
 # Block Designs: bd/ZyboIPCreation/ZyboIPCreation.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation || ORIG_REF_NAME==ZyboIPCreation} -quiet] -quiet
 
-# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_processing_system7_0_1/ZyboIPCreation_processing_system7_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_processing_system7_0_1 || ORIG_REF_NAME==ZyboIPCreation_processing_system7_0_1} -quiet] -quiet
+# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_processing_system7_0_2/ZyboIPCreation_processing_system7_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_processing_system7_0_2 || ORIG_REF_NAME==ZyboIPCreation_processing_system7_0_2} -quiet] -quiet
 
-# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_myGpio2_0_0/ZyboIPCreation_myGpio2_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_myGpio2_0_0 || ORIG_REF_NAME==ZyboIPCreation_myGpio2_0_0} -quiet] -quiet
+# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_myGpio2_0_1/ZyboIPCreation_myGpio2_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_myGpio2_0_1 || ORIG_REF_NAME==ZyboIPCreation_myGpio2_0_1} -quiet] -quiet
 
-# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_ps7_0_axi_periph_3/ZyboIPCreation_ps7_0_axi_periph_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_ps7_0_axi_periph_3 || ORIG_REF_NAME==ZyboIPCreation_ps7_0_axi_periph_3} -quiet] -quiet
+# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_ps7_0_axi_periph_4/ZyboIPCreation_ps7_0_axi_periph_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_ps7_0_axi_periph_4 || ORIG_REF_NAME==ZyboIPCreation_ps7_0_axi_periph_4} -quiet] -quiet
 
-# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_3/ZyboIPCreation_rst_ps7_0_100M_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_rst_ps7_0_100M_3 || ORIG_REF_NAME==ZyboIPCreation_rst_ps7_0_100M_3} -quiet] -quiet
+# IP: bd/ZyboIPCreation/ip/ZyboIPCreation_rst_ps7_0_100M_4/ZyboIPCreation_rst_ps7_0_100M_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_rst_ps7_0_100M_4 || ORIG_REF_NAME==ZyboIPCreation_rst_ps7_0_100M_4} -quiet] -quiet
 
 # IP: bd/ZyboIPCreation/ip/ZyboIPCreation_auto_pc_0/ZyboIPCreation_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ZyboIPCreation_auto_pc_0 || ORIG_REF_NAME==ZyboIPCreation_auto_pc_0} -quiet] -quiet

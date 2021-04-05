@@ -70,11 +70,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ZyboIPCreation.bd" FileRelPathName="ip/ZyboIPCreation_myGpio2_0_0/ZyboIPCreation_myGpio2_0_0.xci">
-          <Proxy FileSetName="ZyboIPCreation_myGpio2_0_0"/>
+        <CompFileExtendedInfo CompFileName="ZyboIPCreation.bd" FileRelPathName="ip/ZyboIPCreation_rst_ps7_0_100M_4/ZyboIPCreation_rst_ps7_0_100M_4.xci">
+          <Proxy FileSetName="ZyboIPCreation_rst_ps7_0_100M_4"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="ZyboIPCreation.bd" FileRelPathName="ip/ZyboIPCreation_processing_system7_0_1/ZyboIPCreation_processing_system7_0_1.xci">
-          <Proxy FileSetName="ZyboIPCreation_processing_system7_0_1"/>
+        <CompFileExtendedInfo CompFileName="ZyboIPCreation.bd" FileRelPathName="ip/ZyboIPCreation_myGpio2_0_1/ZyboIPCreation_myGpio2_0_1.xci">
+          <Proxy FileSetName="ZyboIPCreation_myGpio2_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ZyboIPCreation/hdl/ZyboIPCreation_wrapper.vhd">
@@ -124,15 +124,15 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="ZyboIPCreation_processing_system7_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ZyboIPCreation_processing_system7_0_1">
+    <FileSet Name="ZyboIPCreation_rst_ps7_0_100M_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ZyboIPCreation_rst_ps7_0_100M_4">
       <Config>
-        <Option Name="TopModule" Val="ZyboIPCreation_processing_system7_0_1"/>
+        <Option Name="TopModule" Val="ZyboIPCreation_rst_ps7_0_100M_4"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="ZyboIPCreation_myGpio2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ZyboIPCreation_myGpio2_0_0">
+    <FileSet Name="ZyboIPCreation_myGpio2_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ZyboIPCreation_myGpio2_0_1">
       <Config>
-        <Option Name="TopModule" Val="ZyboIPCreation_myGpio2_0_0"/>
+        <Option Name="TopModule" Val="ZyboIPCreation_myGpio2_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -166,11 +166,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ZyboIPCreation_processing_system7_0_1_synth_1" Type="Ft3:Synth" SrcSet="ZyboIPCreation_processing_system7_0_1" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_processing_system7_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ZyboIPCreation_processing_system7_0_1_synth_1" IncludeInArchive="true">
+    <Run Id="ZyboIPCreation_rst_ps7_0_100M_4_synth_1" Type="Ft3:Synth" SrcSet="ZyboIPCreation_rst_ps7_0_100M_4" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_rst_ps7_0_100M_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ZyboIPCreation_rst_ps7_0_100M_4_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -178,7 +176,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ZyboIPCreation_myGpio2_0_0_synth_1" Type="Ft3:Synth" SrcSet="ZyboIPCreation_myGpio2_0_0" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_myGpio2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ZyboIPCreation_myGpio2_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="ZyboIPCreation_myGpio2_0_1_synth_1" Type="Ft3:Synth" SrcSet="ZyboIPCreation_myGpio2_0_1" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_myGpio2_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ZyboIPCreation_myGpio2_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -208,11 +206,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ZyboIPCreation_processing_system7_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_processing_system7_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ZyboIPCreation_processing_system7_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="ZyboIPCreation_rst_ps7_0_100M_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_rst_ps7_0_100M_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ZyboIPCreation_rst_ps7_0_100M_4_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -227,7 +223,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="ZyboIPCreation_myGpio2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_myGpio2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ZyboIPCreation_myGpio2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="ZyboIPCreation_myGpio2_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="ZyboIPCreation_myGpio2_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="ZyboIPCreation_myGpio2_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1617079110">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1617642352">
   <File Type="PA-TCL" Name="ZyboIPCreation_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ZyboIPCreation_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ZyboIPCreation_wrapper_reports.tcl"/>
@@ -58,6 +58,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ZyboIPCreation_myGpio2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ZyboIPCreation_processing_system7_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ZyboIPCreation_rst_ps7_0_100M_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="ZyboIPCreation_myGpio2_0_1"/>
 </GenRun>
