@@ -1,6 +1,6 @@
-Nothing to build in platform 'ZyboIPCreation_wrapper_1'
+Nothing to build in platform 'ZyboIPCreation_wrapper_2'
 
-18:33:29 **** Incremental Build of configuration Debug for project Lab1_attempt3 ****
+06:25:12 **** Incremental Build of configuration Debug for project interrupt_challenge ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -8,17 +8,24 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 'Building file: ../src/main.cpp'
 'Invoking: ARM v7 g++ compiler'
-arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/sw/ZyboIPCreation_wrapper_1/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_2/export/ZyboIPCreation_wrapper_2/sw/ZyboIPCreation_wrapper_2/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+../src/main.cpp: In function 'void testGpioInterrupts()':
+../src/main.cpp:76:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+     printf("pdir %d\n", myIP->pdir >> 11);
+            ^~~~~~~~~~~  ~~~~~~~~~~~~~~~~
+../src/main.cpp:78:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+     printf("int_en: %d\n", myIP->int_en);
+            ^~~~~~~~~~~~~~  ~~~~~~~~~~~~
 'Finished building: ../src/main.cpp'
 ' '
-'Building target: Lab1_attempt3.elf'
+'Building target: interrupt_challenge.elf'
 'Invoking: ARM v7 g++ linker'
-arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/sw/ZyboIPCreation_wrapper_1/standalone_domain/bsplib/lib -o "Lab1_attempt3.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-'Finished building target: Lab1_attempt3.elf'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_2/export/ZyboIPCreation_wrapper_2/sw/ZyboIPCreation_wrapper_2/standalone_domain/bsplib/lib -o "interrupt_challenge.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: interrupt_challenge.elf'
 ' '
 'Invoking: ARM v7 Print Size'
-arm-none-eabi-size Lab1_attempt3.elf  |tee "Lab1_attempt3.elf.size"
+arm-none-eabi-size interrupt_challenge.elf  |tee "interrupt_challenge.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  38428	   2584	  23320	  64332	   fb4c	Lab1_attempt3.elf
-'Finished building: Lab1_attempt3.elf.size'
+ 115100	   3372	  23372	 141844	  22a14	interrupt_challenge.elf
+'Finished building: interrupt_challenge.elf.size'
 ' '

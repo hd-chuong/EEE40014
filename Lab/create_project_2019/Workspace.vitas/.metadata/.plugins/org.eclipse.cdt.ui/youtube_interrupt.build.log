@@ -1,0 +1,37 @@
+14:37:14 **** Incremental Build of configuration Debug for project youtube_interrupt ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:173:3: warning: implicit declaration of function 'usleep'; did you mean 'fseek'? [-Wimplicit-function-declaration]
+   usleep(200000);
+   ^~~~~~
+   fseek
+At top level:
+../src/helloworld.c:70:12: warning: 'SWT_value' defined but not used [-Wunused-variable]
+ static int SWT_value;
+            ^~~~~~~~~
+../src/helloworld.c:69:12: warning: 'led_data' defined but not used [-Wunused-variable]
+ static int led_data;
+            ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: youtube_interrupt.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "youtube_interrupt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: youtube_interrupt.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size youtube_interrupt.elf  |tee "youtube_interrupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34760	   2992	  22696	  60448	   ec20	youtube_interrupt.elf
+'Finished building: youtube_interrupt.elf.size'
+' '
+
+14:37:15 Build Finished (took 827ms)
+

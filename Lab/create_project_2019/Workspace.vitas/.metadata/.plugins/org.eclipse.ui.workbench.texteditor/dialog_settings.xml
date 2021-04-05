@@ -2,12 +2,22 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MYGPIO2_0" key="selection"/>
+		<item value="interrupt" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="interrupt"/>
+			<item value="INTC_GPIO_INTERRUPT_ID"/>
+			<item value="ip2intc"/>
+			<item value="GpioInstancePtr"/>
+			<item value="GPIO_Ins"/>
+			<item value="BTN"/>
+			<item value="XPAR_FABRIC"/>
+			<item value="XPAR_AXI_GPIO"/>
+			<item value="SCUGIC"/>
+			<item value="DEVICE_ID"/>
 			<item value="MYGPIO2_1"/>
 			<item value="XPAR_MYGPIO"/>
 			<item value="XPAR_"/>
@@ -15,13 +25,14 @@
 			<item value="XPAR_MYGPIO_0_S00_AXI_BASEADDR"/>
 		</list>
 		<list key="replacehistory">
+			<item value="SWT"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="336" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="454" key="DIALOG_HEIGHT"/>
-		<item value="904" key="DIALOG_X_ORIGIN"/>
-		<item value="482" key="DIALOG_Y_ORIGIN"/>
+		<item value="449" key="DIALOG_HEIGHT"/>
+		<item value="9" key="DIALOG_X_ORIGIN"/>
+		<item value="352" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

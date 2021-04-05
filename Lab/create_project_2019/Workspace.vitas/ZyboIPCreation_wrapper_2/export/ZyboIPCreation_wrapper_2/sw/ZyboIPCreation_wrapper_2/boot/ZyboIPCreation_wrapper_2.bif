@@ -1,0 +1,7 @@
+/*ZyboIPCreation_wrapper_2*/
+the_ROM_image:
+{
+  [bootloader]<ZyboIPCreation_wrapper_2/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

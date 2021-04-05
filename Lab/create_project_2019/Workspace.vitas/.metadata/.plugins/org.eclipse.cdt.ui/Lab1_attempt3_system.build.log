@@ -1,10 +1,8 @@
-14:21:45 **** Build of configuration Debug for project Lab1_attempt3_system ****
-make all 
-Generating bif file for the system project
-generate_system_bif.bat 51907 D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/ZyboIPCreation_wrapper_1.xpfm standalone_domain D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3_system/Debug/system.bif
-sdcard_gen --xpfm D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/ZyboIPCreation_wrapper_1/export/ZyboIPCreation_wrapper_1/ZyboIPCreation_wrapper_1.xpfm --sys_config ZyboIPCreation_wrapper_1 --bif D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3_system/Debug/system.bif --bitstream D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit --elf D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/Debug/Lab1_attempt3.elf,ps7_cortexa9_0
-creating BOOT.BIN using D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3/_ide/bitstream/ZyboIPCreation_wrapper.bit
-Running E:/Xilinx/Vitis/2019.2/bin/bootgen  -image D:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/Lab1_attempt3_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+14:07:13 **** Clean-only build of configuration Debug for project Lab1_attempt3_system ****
+make clean 
+rm -rf ./_sds
+rm -rf sd_card
+rm -f system.bif
 
-14:21:51 Build Finished (took 5s.832ms)
+14:07:14 Build Finished (took 276ms)
 

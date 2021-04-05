@@ -1,57 +1,64 @@
-/**
- *  Test program for flexible GPIO
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <xparameters.h>
-#include <xscugic.h>
-#include <xil_exception.h>
-#include <sleep.h>
-#include "Gpio.h"
-#include "ScuGic.h"
-
-using namespace Hardware;
-
-struct MyIp {
-   uint32_t pdor;   // Port data output register
-   uint32_t pdir; 	// For expansion
-   uint32_t pddr;   // Port data direction register
-   uint32_t psor; 	// For expansion
-   uint32_t pcor; 	// For expansion
-   uint32_t ptor; 	// For expansion
-   uint32_t ack;	// For interrupt configuration in IP
-};
-
-void handler(void *data) {
-   printf("Irq\n");
-   // Clear flag in your IP
-}
-
-ScuGic *scuGic;
-
-void testGpioInterrupts() {
-   scuGic = new ScuGic(XPAR_PS7_SCUGIC_0_DEVICE_ID);
-
-   // this part connects the interrupt handler with the scuGic
-   scuGic->connectHandler(XPAR_FABRIC_GPIO_0_IRQ_INTR, handler, nullptr, Priority_Normal);
-
-   static MyIp * const myIP = reinterpret_cast<MyIp *>(XPAR_MYGPIO2_0_S00_AXI_BASEADDR);
-	 myIP->pddr= 0b1111;
-	 myIP->pdor = 0b0000;
-
-   // Code to configure interrupts in your IP
-   Xil_ExceptionEnable();
-
-   // Wait for events
-   for(;;) {
-   }
-}
-
-int main() {
-   printf("Starting\n");
-
-   testGpioInterrupts();
-
-   return 0;
-}
+///**
+// *  Test program for flexible GPIO
+// */
+//
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <xparameters.h>
+//#include <xscugic.h>
+//#include <xil_exception.h>
+//#include <sleep.h>
+//#include "Gpio.h"
+//#include "ScuGic.h"
+//
+//using namespace Hardware;
+//
+//struct MyIp {
+//   uint32_t pdor;   // Port data output register
+//   uint32_t pdir; 	// For expansion
+//   uint32_t pddr;   // Port data direction register
+//   uint32_t psor; 	// For expansion
+//   uint32_t pcor; 	// For expansion
+//   uint32_t ptor; 	// For expansion
+//
+//   bool interrupt_enable; // For enabling the interrupt
+//   uint32_t irq_pin;
+//   uint32_t sensitivity; // control if rising, falling or either
+//   uint32_t ack;	// For interrupt configuration in IP
+//
+//};
+//
+//void handler(void *data) {
+//   printf("Irq\n");
+//   // Clear flag in your IP
+//}
+//
+//ScuGic *scuGic;
+//
+//void testGpioInterrupts() {
+//   scuGic = new ScuGic(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+//
+//   // this part connects the interrupt handler with the scuGic
+//   scuGic->connectHandler(XPAR_FABRIC_GPIO_0_IRQ_INTR, handler, nullptr, Priority_Normal);
+//
+//   static MyIp * const myIP = reinterpret_cast<MyIp *>(XPAR_MYGPIO2_0_S00_AXI_BASEADDR);
+//	myIP->pddr= 0b1111;
+//	myIP->pdor = 0b0000;
+//
+//   // Code to configure interrupts in your IP
+//	myIP->irq_pin = 0b0000; // the first pin
+//	myIP->sensitivity = 0b0000; // check back in VHDL.
+//   Xil_ExceptionEnable();
+//
+//   // Wait for events
+//   for(;;) {
+//   }
+//}
+//
+//int main() {
+//   printf("Starting\n");
+//
+//   testGpioInterrupts();
+//
+//   return 0;
+//}

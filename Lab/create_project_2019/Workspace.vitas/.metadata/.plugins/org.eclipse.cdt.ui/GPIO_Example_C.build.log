@@ -1,10 +1,18 @@
-16:26:33 **** Incremental Build of configuration Debug for project GPIO_Example_C ****
+14:07:40 **** Build of configuration Debug for project GPIO_Example_C ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Y4/hardsoft/Lab/create_project_2019/Workspace.vitas/GPIO_Example_C/Debug/_sdk/bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:19:10: fatal error: xgpio.h: No such file or directory
+ #include <xgpio.h>
+          ^~~~~~~~~
+compilation terminated.
+make[1]: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+make: *** [makefile:34: all] Error 2
 
-16:26:33 Build Finished (took 269ms)
+14:07:40 Build Finished (took 768ms)
 
