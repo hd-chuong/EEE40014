@@ -43,7 +43,7 @@ int main() {
     // ???? Only work
     ;
     //
-     myIP->pdor = myIP->pdor;
+    // myIP->pdor = myIP->pdor;
 
     // xil_printf("PDIR: %d\n", myIP->pdir);
     xil_printf("PDOR: %d\n", myIP->pdor);
