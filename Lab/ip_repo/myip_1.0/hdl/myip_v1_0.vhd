@@ -2,31 +2,21 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity myGpio2_v1_0 is
+entity myip_v1_0 is
 	generic (
 		-- Users to add parameters here
-		-- Users to add parameters here
-        C_GPIO_WIDTH: integer := 12;
-        INTERRUPT_EN : integer:= 1;  -- for enabling int
-        INDEX_REG : integer:= 11; -- for int pin
-        --Interrupt Sensitivity 
-        -- 0 = Rising, 
-        -- 1 = Falling, 
-        -- 2 = Both
-        INTERRUPT_SENSITIVITY : integer:=0;
-		
+
+		-- User parameters ends
+		-- Do not modify the parameters beyond this line
+
+
 		-- Parameters of Axi Slave Bus Interface S00_AXI
 		C_S00_AXI_DATA_WIDTH	: integer	:= 32;
-		C_S00_AXI_ADDR_WIDTH	: integer	:= 5
+		C_S00_AXI_ADDR_WIDTH	: integer	:= 6
 	);
 	port (
 		-- Users to add ports here
-        GPIO_I: in std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-        GPIO_O: out std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-        GPIO_T: out std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-		
-		IRQ: out std_logic;
-		
+
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -54,28 +44,50 @@ entity myGpio2_v1_0 is
 		s00_axi_rvalid	: out std_logic;
 		s00_axi_rready	: in std_logic
 	);
-end myGpio2_v1_0;
+end myip_v1_0;
 
-architecture arch_imp of myGpio2_v1_0 is
+architecture arch_imp of myip_v1_0 is
+
+	-- component declaration
+	component myip_v1_0_S00_AXI is
+		generic (
+		C_S_AXI_DATA_WIDTH	: integer	:= 32;
+		C_S_AXI_ADDR_WIDTH	: integer	:= 6
+		);
+		port (
+		S_AXI_ACLK	: in std_logic;
+		S_AXI_ARESETN	: in std_logic;
+		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
+		S_AXI_AWPROT	: in std_logic_vector(2 downto 0);
+		S_AXI_AWVALID	: in std_logic;
+		S_AXI_AWREADY	: out std_logic;
+		S_AXI_WDATA	: in std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+		S_AXI_WSTRB	: in std_logic_vector((C_S_AXI_DATA_WIDTH/8)-1 downto 0);
+		S_AXI_WVALID	: in std_logic;
+		S_AXI_WREADY	: out std_logic;
+		S_AXI_BRESP	: out std_logic_vector(1 downto 0);
+		S_AXI_BVALID	: out std_logic;
+		S_AXI_BREADY	: in std_logic;
+		S_AXI_ARADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
+		S_AXI_ARPROT	: in std_logic_vector(2 downto 0);
+		S_AXI_ARVALID	: in std_logic;
+		S_AXI_ARREADY	: out std_logic;
+		S_AXI_RDATA	: out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+		S_AXI_RRESP	: out std_logic_vector(1 downto 0);
+		S_AXI_RVALID	: out std_logic;
+		S_AXI_RREADY	: in std_logic
+		);
+	end component myip_v1_0_S00_AXI;
 
 begin
 
 -- Instantiation of Axi Bus Interface S00_AXI
-myGpio2_v1_0_S00_AXI_inst : entity work.myGpio2_v1_0_S00_AXI
+myip_v1_0_S00_AXI_inst : myip_v1_0_S00_AXI
 	generic map (
-	    C_GPIO_WIDTH => C_GPIO_WIDTH,
 		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
-		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH,
-		INTERRUPT_EN => INTERRUPT_EN,  -- for enabling int
-        INDEX_REG => INDEX_REG, -- for int pin
-        INTERRUPT_SENSITIVITY => INTERRUPT_SENSITIVITY
-		
+		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
-	    GPIO_I => GPIO_I,
-	    GPIO_O => GPIO_O,
-	    GPIO_T => GPIO_T,
-		IRQ => IRQ,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
