@@ -5,28 +5,22 @@ use ieee.numeric_std.all;
 entity myGpio2_v1_0 is
 	generic (
 		-- Users to add parameters here
-		-- Users to add parameters here
-        C_GPIO_WIDTH: integer := 12;
-        INTERRUPT_EN : integer:= 1;  -- for enabling int
-        INDEX_REG : integer:= 11; -- for int pin
-        --Interrupt Sensitivity 
-        -- 0 = Rising, 
-        -- 1 = Falling, 
-        -- 2 = Both
-        INTERRUPT_SENSITIVITY : integer:=0;
-		
+        C_GPIO_WIDTH : integer := 12; -- add generic 
+
+		-- User parameters ends
+		-- Do not modify the parameters beyond this line
+
+
 		-- Parameters of Axi Slave Bus Interface S00_AXI
 		C_S00_AXI_DATA_WIDTH	: integer	:= 32;
 		C_S00_AXI_ADDR_WIDTH	: integer	:= 5
 	);
 	port (
 		-- Users to add ports here
-        GPIO_I: in std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-        GPIO_O: out std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-        GPIO_T: out std_logic_vector(C_GPIO_WIDTH - 1 downto 0);
-		
-		IRQ: out std_logic;
-		
+        GPIO_I  : in  std_logic_vector(C_GPIO_WIDTH-1 downto 0); -- add ports
+        GPIO_O  : out   std_logic_vector(C_GPIO_WIDTH-1 downto 0); -- add  
+        GPIO_T  : out   std_logic_vector(C_GPIO_WIDTH-1 downto 0); -- add 
+        IRQ: out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -59,23 +53,18 @@ end myGpio2_v1_0;
 architecture arch_imp of myGpio2_v1_0 is
 
 begin
-
 -- Instantiation of Axi Bus Interface S00_AXI
 myGpio2_v1_0_S00_AXI_inst : entity work.myGpio2_v1_0_S00_AXI
 	generic map (
-	    C_GPIO_WIDTH => C_GPIO_WIDTH,
-		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
-		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH,
-		INTERRUPT_EN => INTERRUPT_EN,  -- for enabling int
-        INDEX_REG => INDEX_REG, -- for int pin
-        INTERRUPT_SENSITIVITY => INTERRUPT_SENSITIVITY
-		
+	    C_GPIO_WIDTH          => C_GPIO_WIDTH, 
+		C_S_AXI_DATA_WIDTH	  => C_S00_AXI_DATA_WIDTH,
+		C_S_AXI_ADDR_WIDTH	  => C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
-	    GPIO_I => GPIO_I,
-	    GPIO_O => GPIO_O,
-	    GPIO_T => GPIO_T,
-		IRQ => IRQ,
+	    GPIO_I  => GPIO_I,
+        GPIO_O  => GPIO_O,  
+        GPIO_T  => GPIO_T, 
+        IRQ     => IRQ,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
