@@ -8,10 +8,15 @@
 #include <xscugic.h>
 #include <xil_exception.h>
 #include <sleep.h>
-//#include "Gpio.h"
 #include "ScuGic.h"
 
 using namespace Hardware;
+
+enum SENSITIVITY_TYPE {
+	RISING = 0,
+	FALLING = 1,
+	BOTH = 2
+} button;
 
 struct MyIp {
   // existing registers
@@ -22,63 +27,47 @@ struct MyIp {
    uint32_t pcor; 	// For expansion
    uint32_t ptor; 	// For expansion
 
-   // this might cause issues later because not sure how many bits are read
-   //   uint32_t unused; // For enabling the interrupt, // 0 represent false, 1 represent true
-//    uint32_t ack;	// For interrupt configuration in IP
-    uint32_t irq_pin;
-    uint32_t sensitivity; // control if rising, falling or either
-    uint32_t int_en;
+   uint32_t irq_pin;
+   uint32_t sensitivity;	//0 - rising edge, 1 - falling edge, 2 - both
+
 };
 
 static MyIp * const myIP = reinterpret_cast<MyIp *>(XPAR_MYGPIO2_0_S00_AXI_BASEADDR);
 
 void handler(void *data) {
-//  	myIP->int_en = 0x0; // 0 represent false, 1 represent true
-
 	static int count = 0;
 	printf("button clicked %d\n", count++);
-
-  	// Clear flag in your IP
-	// myIP->int_en = 0x1;
-    // myIP->ack = 0xFFFF;
-	myIP->pdor = 0b1111;
-	sleep(2);
+	usleep(100000);
 }
 
 ScuGic *scuGic;
 
 void testGpioInterrupts() {
-   scuGic = new ScuGic(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+	scuGic = new ScuGic(XPAR_PS7_SCUGIC_0_DEVICE_ID);
 
-   // this part connects the interrupt handler with the scuGic
-   scuGic->connectHandler(XPAR_FABRIC_MYGPIO2_0_IRQ_INTR, handler, nullptr, Priority_Normal);
+	// this part connects the interrupt handler with the scuGic
+	scuGic->connectHandler(XPAR_FABRIC_MYGPIO2_0_IRQ_INTR, handler, nullptr, Priority_Normal);
 
 	// setting the first 4 bits to be outputs (LEDs)
-   //	myIP->int_en = 0x1111;
-   	myIP->pddr= 0b1111; // 1 for output. 0 for input
-	myIP->pdor = 0b1111;
-	myIP->int_en = 1;
+	myIP->pddr= 0b1111; // 1 for output. 0 for input
+	// Configure interrupt GPIO pin
 	myIP->irq_pin = 4;
-	myIP->sensitivity = 2;
-
-//	myIP->ack = 0x0000;
-   // Code to configure interrupts in your IP
+	// Configure interrupt sensitivity
+	myIP->sensitivity = BOTH;
 
 	Xil_ExceptionEnable();
 
-   // Wait for events
-	int count = 0;
+	// Wait for events
+	int count = 0b0001;
 	for(;;) {
-		// let LED incrementally
-	   count +=2;
-	   myIP->pdor = count + 1;
-	   if (count > 15) count = 0;
-	   printf("pdir %d\n", myIP->pdir >> 11);
-//	   printf("irq_pin: %d\n", myIP->irq_pin);
-	   printf("int_en: %d\n", myIP->int_en);
+		// Light chaser
+		myIP->pdor = count;
+		count = count << 1;
+		if (count == 0b10000) count = 0b0001;
+		printf("pdir %d\n", myIP->pdir >> 11);
 
-	   usleep(200000);
-   }
+		usleep(100000);
+	}
 }
 
 int main() {
